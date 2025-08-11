@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+            <h1 class="text-3xl font-bold underline">
+                Modules
+            </h1>
+            <div class="modules">
+                <ul>
+                    <li>Dynamics Memory Allocation, Order Analysis, Summations</li>
+                    <li>Algorithm Design, Recursion, Reccurrence Relations</li>
+                    <li>Linked Lists</li>
+                    <li>Stacks, Queues, Binary Search Trees</li>
+                    <li>AVL Trees</li>
+                    <li>Tries, Heaps</li>
+                    <li>Hash Tables</li>
+                    <li>Sorting Algorithms</li>
+                    <li>Base Conversion, 2's Complement</li>
+                    <li>Bitwise Operators, Bit Masking</li>
+                </ul>
+            </div>
+        </>
+    )
 }
-
 export default App
