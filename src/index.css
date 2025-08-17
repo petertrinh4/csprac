@@ -1,2 +1,7 @@
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 @import 'tailwindcss';
 @plugin "daisyui";
