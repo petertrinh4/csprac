@@ -50,7 +50,7 @@ export const modules: Module[] = [
   },
   {
     id: 'trees',
-    title: 'Binary Search Trees, AVL Trees, Heaps',
+    title: 'Binary Search Trees, AVL Trees, Tries, Heaps',
     intro: 'Learn about binary search trees, AVL trees, and heaps.',
     image: '/bst.webp',
     content: 'Content for Trees module.',
@@ -79,5 +79,13 @@ export const modules: Module[] = [
     image: '/binaryconv.webp',
     content: 'Content for Bitwise Operators module.',
     img_position: 'module-center',
+  },
+  {
+    id: 'sum',
+    title: 'Summations',
+    intro: 'Stay tuned for more modules.',
+    image: '/sums.webp',
+    content: 'Content for Summations module.',
+    img_position: 'module-right',
   },
 ];
