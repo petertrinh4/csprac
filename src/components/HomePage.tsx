@@ -52,6 +52,12 @@ const HomePage = () => {
             image="public/binaryconv.webp"
             id="bitwise"
           />
+          <ModuleCard
+            title="Summations"
+            description="Stay tuned for more modules."
+            image="public/sums.webp"
+            id="sum"
+          />
         </div>
       </div>
     </>

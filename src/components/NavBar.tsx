@@ -34,7 +34,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <a className="text-black hover:bg-gray-200">
-                      Binary Search Trees, AVL Trees, Heaps
+                      Binary Search Trees, AVL Trees, Tries, Heaps
                     </a>
                   </li>
                   <li>
@@ -47,6 +47,9 @@ const NavBar = () => {
                     <a className="text-black hover:bg-gray-200">
                       Bitwise Operators, Bitmasking, Base Conversion
                     </a>
+                  </li>
+                  <li>
+                    <a className="text-black hover:bg-gray-200">Summations</a>
                   </li>
                 </ul>
               </details>
