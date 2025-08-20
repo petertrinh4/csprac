@@ -66,7 +66,7 @@ export const modules: Module[] = [
   {
     id: 'linkedlist',
     title: 'Linked Lists',
-    intro: 'Learn about linked lists and their operations.',
+    intro: '',
     image: '/linkedlist.webp',
     content: (
       <>
