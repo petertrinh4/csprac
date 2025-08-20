@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import NavBar from './NavBar';
 type ModuleInfoProps = {
   title: string;
   intro: string;
@@ -10,8 +11,13 @@ type ModuleInfoProps = {
 const ModuleInfo = ({ title, intro, image, content, img_position }: ModuleInfoProps) => {
   return (
     <div>
+      <NavBar />
       <h1>{title}</h1>
-      <img src={image} alt={title} className={`rounded-xl center-image ${img_position || ''}object-contain max-h-60`} />
+      <img
+        src={image}
+        alt={title}
+        className={`rounded-xl center-image ${img_position || ''}object-contain max-h-60`}
+      />
       <p>{intro}</p>
       {content} {/* Content will have links to numerous resources */}
     </div>
