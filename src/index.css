@@ -1,7 +1,62 @@
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.module-info-container {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.module-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.with-navbar {
+  padding-top: 4.5rem;
+}
+.module-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.module-flex.reverse {
+  flex-direction: row-reverse;
+}
+.module-image-wrapper {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.module-image {
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+.module-content-wrapper {
+  flex: 2 1 400px;
+}
+.module-intro {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 800px) {
+  .module-flex,
+  .module-flex.reverse {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .module-image-wrapper,
+  .module-content-wrapper {
+    width: 100%;
+    flex: unset;
+  }
+  .module-image {
+    max-height: 220px;
+  }
 }
 @import 'tailwindcss';
 @plugin "daisyui";

@@ -12,14 +12,18 @@ const ModuleInfo = ({ title, intro, image, content, img_position }: ModuleInfoPr
   return (
     <div>
       <NavBar />
-      <h1>{title}</h1>
-      <img
-        src={image}
-        alt={title}
-        className={`rounded-xl center-image ${img_position || ''}object-contain max-h-60`}
-      />
-      <p>{intro}</p>
-      {content} {/* Content will have links to numerous resources */}
+      <div className="with-navbar module-info-container">
+        <h1 className="module-title">{title}</h1>
+        <div className={`module-flex ${img_position === 'right' ? 'reverse' : ''}`}>
+          <div className="module-image-wrapper">
+            <img src={image} alt={title} className="module-image" />
+          </div>
+          <div className="module-content-wrapper">
+            <p className="module-intro">{intro}</p>
+            {content}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
