@@ -9,7 +9,8 @@ export const modules: Module[] = [
     image: '/pointer.webp',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/vgvR515ORaY" />
+        <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" />
+        <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs"/>
         <a
           href="https://en.wikipedia.org/wiki/Dynamic_memory_allocation"
           target="_blank"
@@ -29,6 +30,8 @@ export const modules: Module[] = [
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/8hly31xKli0" />
+        <VideoPlayer url="https://www.youtube.com/embed/vgvR515ORaY" />
+        <VideoPlayer url="https://www.youtube.com/embed/xGYsEqe9Vl0"/>
         <a
           href="https://en.wikipedia.org/wiki/Analysis_of_algorithms"
           target="_blank"
@@ -47,7 +50,8 @@ export const modules: Module[] = [
     image: '/recursion.webp',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/Mv9NEXX1VHc" />
+        <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" />
+        <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" />
         <a
           href="https://en.wikipedia.org/wiki/Recursion_(computer_science)"
           target="_blank"
@@ -66,7 +70,8 @@ export const modules: Module[] = [
     image: '/linkedlist.webp',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/NobHlGUjV3g" />
+      <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
+
         <a
           href="https://en.wikipedia.org/wiki/Linked_list"
           target="_blank"
@@ -85,7 +90,7 @@ export const modules: Module[] = [
     image: '/stack.webp',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/zwb3GmNAtFk" />
+      <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
         <a
           href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"
           target="_blank"
@@ -104,7 +109,9 @@ export const modules: Module[] = [
     image: '/bst.webp',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/5cU1ILGy6dM" />
+        <VideoPlayer url="https://www.youtube.com/embed/Gt2yBZAhsGM" />
+        <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE"/>
+        <VideoPlayer url="https://www.youtube.com/embed/t0Cq6tVNRBA"/>
         <a
           href="https://en.wikipedia.org/wiki/Binary_search_tree"
           target="_blank"
@@ -123,7 +130,7 @@ export const modules: Module[] = [
     image: '/mergesort.webp',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/SHcPqUe2GZM" />
+        <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
         <a
           href="https://en.wikipedia.org/wiki/Sorting_algorithm"
           target="_blank"
@@ -161,7 +168,8 @@ export const modules: Module[] = [
     image: '/binaryconv.webp',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/1cG2jv2A3gU" />
+        <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
+        <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
         <a
           href="https://en.wikipedia.org/wiki/Bitwise_operation"
           target="_blank"
@@ -180,7 +188,7 @@ export const modules: Module[] = [
     image: '/sums.webp',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/3C1j4M4jG74" />
+      <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
         <a href="https://en.wikipedia.org/wiki/Summation" target="_blank" rel="noopener noreferrer">
           Content for Summations module.
         </a>
