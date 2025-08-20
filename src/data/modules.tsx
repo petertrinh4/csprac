@@ -6,11 +6,11 @@ export const modules: Module[] = [
     id: 'dma',
     title: 'Dynamic Memory Allocation',
     intro: '',
-    image: '/pointer.webp',
+    image: '/pointers.gif',
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" />
-        <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs"/>
+        <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" />
         <a
           href="https://en.wikipedia.org/wiki/Dynamic_memory_allocation"
           target="_blank"
@@ -26,12 +26,11 @@ export const modules: Module[] = [
     id: 'alg',
     title: 'Algorithm Analysis',
     intro: '',
-    image: '/alg_analysis.webp',
+    image: '/bigo.gif',
     content: (
       <>
-        <VideoPlayer url="https://www.youtube.com/embed/8hly31xKli0" />
         <VideoPlayer url="https://www.youtube.com/embed/vgvR515ORaY" />
-        <VideoPlayer url="https://www.youtube.com/embed/xGYsEqe9Vl0"/>
+        <VideoPlayer url="https://www.youtube.com/embed/xGYsEqe9Vl0" />
         <a
           href="https://en.wikipedia.org/wiki/Analysis_of_algorithms"
           target="_blank"
@@ -47,7 +46,7 @@ export const modules: Module[] = [
     id: 'rec',
     title: 'Recursion, Recurrence Relations',
     intro: '',
-    image: '/recursion.webp',
+    image: '/hanoi.gif',
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" />
@@ -67,10 +66,10 @@ export const modules: Module[] = [
     id: 'linkedlist',
     title: 'Linked Lists',
     intro: '',
-    image: '/linkedlist.webp',
+    image: '/linkedlist.gif',
     content: (
       <>
-      <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
+        <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
 
         <a
           href="https://en.wikipedia.org/wiki/Linked_list"
@@ -87,10 +86,10 @@ export const modules: Module[] = [
     id: 'stacks',
     title: 'Stacks, Queues',
     intro: '',
-    image: '/stack.webp',
+    image: '/queue.gif',
     content: (
       <>
-      <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
+        <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
         <a
           href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"
           target="_blank"
@@ -106,12 +105,11 @@ export const modules: Module[] = [
     id: 'trees',
     title: 'Binary Search Trees, AVL Trees, Tries, Heaps',
     intro: '',
-    image: '/bst.webp',
+    image: '/bfs.gif',
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/Gt2yBZAhsGM" />
-        <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE"/>
-        <VideoPlayer url="https://www.youtube.com/embed/t0Cq6tVNRBA"/>
+        <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" />
         <a
           href="https://en.wikipedia.org/wiki/Binary_search_tree"
           target="_blank"
@@ -127,7 +125,7 @@ export const modules: Module[] = [
     id: 'sort',
     title: 'Sorting Algorithms',
     intro: '',
-    image: '/mergesort.webp',
+    image: '/bubble.gif',
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
@@ -146,7 +144,7 @@ export const modules: Module[] = [
     id: 'hash',
     title: 'HashTables',
     intro: '',
-    image: '/hashtables.webp',
+    image: '/hashtable.gif',
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
@@ -165,7 +163,7 @@ export const modules: Module[] = [
     id: 'bitwise',
     title: 'Bitwise Operators, Bitmasking, Base Conversion',
     intro: '',
-    image: '/binaryconv.webp',
+    image: '/bitwise.gif',
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
@@ -185,10 +183,10 @@ export const modules: Module[] = [
     id: 'sum',
     title: 'Summations',
     intro: '',
-    image: '/sums.webp',
+    image: '/sum.gif',
     content: (
       <>
-      <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
+        <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
         <a href="https://en.wikipedia.org/wiki/Summation" target="_blank" rel="noopener noreferrer">
           Content for Summations module.
         </a>

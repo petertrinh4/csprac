@@ -57,6 +57,16 @@ const NavBar = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link to="/module/hash" className="text-black hover:bg-gray-200">
+                      HashTables
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/module/bitwise" className="text-black hover:bg-gray-200">
+                      Bitwise Operators, Bitmasking, Base Conversion
+                    </Link>
+                  </li>
+                  <li>
                     <Link to="/module/sum" className="text-black hover:bg-gray-200">
                       Summations
                     </Link>

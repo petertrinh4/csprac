@@ -5,11 +5,10 @@ import Background from '../components/Background';
 const HomePage = () => {
   return (
     <>
-    <Background /> 
+      <Background />
       <NavBar />
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="with-navbar min-h-screen flex items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <NavBar />
           <ModuleCard
             title="Dynamic Memory Allocation"
             description=""
