@@ -1,4 +1,5 @@
 import type { Module } from './moduleTypes';
+import VideoPlayer from '../components/VideoPlayer';
 
 export const modules: Module[] = [
   {
@@ -9,7 +10,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Dynamic Memory Allocation module.</p>
-        <img src="/pointer.webp" alt="Dynamic Memory Allocation" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/vgvR515ORaY" />
         <a
           href="https://en.wikipedia.org/wiki/Dynamic_memory_allocation"
           target="_blank"
@@ -29,7 +30,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Algorithm Analysis module.</p>
-        <video src="/alg_analysis.mp4" controls style={{ width: '300px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/8hly31xKli0" />
         <a
           href="https://en.wikipedia.org/wiki/Analysis_of_algorithms"
           target="_blank"
@@ -49,7 +50,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Recursion module.</p>
-        <img src="/recursion.webp" alt="Recursion" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/Mv9NEXX1VHc" />
         <a
           href="https://en.wikipedia.org/wiki/Recursion_(computer_science)"
           target="_blank"
@@ -69,7 +70,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Linked Lists module.</p>
-        <img src="/linkedlist.webp" alt="Linked Lists" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/NobHlGUjV3g" />
         <a
           href="https://en.wikipedia.org/wiki/Linked_list"
           target="_blank"
@@ -89,7 +90,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Stacks and Queues module.</p>
-        <img src="/stack.webp" alt="Stacks and Queues" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/zwb3GmNAtFk" />
         <a
           href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"
           target="_blank"
@@ -109,7 +110,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Trees module.</p>
-        <img src="/bst.webp" alt="Trees" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/5cU1ILGy6dM" />
         <a
           href="https://en.wikipedia.org/wiki/Binary_search_tree"
           target="_blank"
@@ -129,7 +130,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Sorting Algorithms module.</p>
-        <img src="/mergesort.webp" alt="Sorting Algorithms" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/SHcPqUe2GZM" />
         <a
           href="https://en.wikipedia.org/wiki/Sorting_algorithm"
           target="_blank"
@@ -149,7 +150,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for HashTables module.</p>
-        <img src="/hashtables.webp" alt="HashTables" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
         <a
           href="https://en.wikipedia.org/wiki/Hash_table"
           target="_blank"
@@ -169,7 +170,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Bitwise Operators module.</p>
-        <img src="/binaryconv.webp" alt="Bitwise Operators" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/1cG2jv2A3gU" />
         <a
           href="https://en.wikipedia.org/wiki/Bitwise_operation"
           target="_blank"
@@ -189,7 +190,7 @@ export const modules: Module[] = [
     content: (
       <>
         <p>Content for Summations module.</p>
-        <img src="/sums.webp" alt="Summations" style={{ width: '200px' }} />
+        <VideoPlayer url="https://www.youtube.com/embed/3C1j4M4jG74" />
         <a href="https://en.wikipedia.org/wiki/Summation" target="_blank" rel="noopener noreferrer">
           Learn more
         </a>
