@@ -2,8 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage.tsx';
 import ModuleInfo from './components/ModuleInfo.tsx';
 import { useParams } from 'react-router-dom';
-import { modules } from './data/modules.ts';
-import type { Module } from './data/modules.ts';
+import { modules } from './data/modules.tsx';
+import type { Module } from './data/moduleTypes';
 
 const App = () => {
   return (
