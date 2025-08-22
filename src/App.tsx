@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage.tsx';
 import Practice from './components/Practice';
 import Auth from './components/Auth';
+import AuthCallback from './components/AuthCallback';
 import Resources from './components/Resources';
 import ModuleInfo from './components/ModuleInfo.tsx';
 import { useParams } from 'react-router-dom';
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/practice" element={<Practice />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/auth" element={<Auth />} />
+        <Route path="/auth/callback" element={<AuthCallback />} />
       </Routes>
     </>
   );
