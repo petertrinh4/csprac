@@ -3,20 +3,31 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
   return (
     <>
-      <div className="navbar bg-white text-black shadow-sm fixed top-0 left-0 w-full z-10">
-        <div className="flex-none">
+      <div className="navbar bg-white text-black shadow-sm fixed top-0 left-0 w-full z-10 flex items-center justify-between">
+        <div className="flex items-center">
           <img src="/ucf.webp" alt="UCF Logo" className="h-10 w-10 ml-4" />
         </div>
         <div className="flex-1 flex justify-center">
-          <h1 className="text-xl font-bold">CS1 Prep</h1>
+          <h1 className="text-xl font-bold"></h1>
         </div>
-        <div className="flex-none">
+        <div className="flex items-center">
           <ul className="menu menu-horizontal px-1">
             <li>
               <Link to="/" className="text-black hover:bg-gray-200">
                 Home
               </Link>
             </li>
+            <li>
+              <Link to="/practice" className="text-black hover:bg-gray-200">
+                Practice
+              </Link>
+            </li>
+            <li>
+              <Link to="/resources" className="text-black hover:bg-gray-200">
+                Resources
+              </Link>
+            </li>
+
             <li>
               <details className="relative">
                 <summary className="text-black hover:bg-gray-200">Modules</summary>
@@ -73,6 +84,11 @@ const NavBar = () => {
                   </li>
                 </ul>
               </details>
+            </li>
+            <li>
+              <Link to="/auth" className="text-black hover:bg-gray-200">
+                Login
+              </Link>
             </li>
           </ul>
         </div>
