@@ -1,5 +1,6 @@
 import type { Module } from './moduleTypes';
 import VideoPlayer from '../components/VideoPlayer';
+import Background from '../components/Background';
 
 export const modules: Module[] = [
   {
@@ -9,6 +10,7 @@ export const modules: Module[] = [
     image: '/pointers.gif',
     content: (
       <>
+      <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" />
         <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" />
         <div className="wiki-links-list">
@@ -76,6 +78,7 @@ export const modules: Module[] = [
     image: '/bigo.gif',
     content: (
       <>
+      <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/vgvR515ORaY" />
         <VideoPlayer url="https://www.youtube.com/embed/xGYsEqe9Vl0" />
         <div className="wiki-links-list">
@@ -143,6 +146,7 @@ export const modules: Module[] = [
     image: '/hanoi.gif',
     content: (
       <>
+            <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" />
         <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" />
         <div className="wiki-links-list">
@@ -210,6 +214,7 @@ export const modules: Module[] = [
     image: '/linkedlist.gif',
     content: (
       <>
+            <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
         <div className="wiki-links-list">
           <ul>
@@ -276,6 +281,7 @@ export const modules: Module[] = [
     image: '/queue.gif',
     content: (
       <>
+            <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
         <div className="wiki-links-list">
           <ul>
@@ -342,6 +348,7 @@ export const modules: Module[] = [
     image: '/bfs.gif',
     content: (
       <>
+            <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/Gt2yBZAhsGM" />
         <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" />
         <div className="wiki-links-list">
@@ -409,6 +416,7 @@ export const modules: Module[] = [
     image: '/bubble.gif',
     content: (
       <>
+            <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
         <div className="wiki-links-list">
           <ul>
@@ -475,6 +483,7 @@ export const modules: Module[] = [
     image: '/hashtable.gif',
     content: (
       <>
+            <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
         <div className="wiki-links-list">
           <ul>
@@ -541,6 +550,7 @@ export const modules: Module[] = [
     image: '/bitwise.gif',
     content: (
       <>
+            <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
         <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
         <div className="wiki-links-list">
@@ -608,6 +618,7 @@ export const modules: Module[] = [
     image: '/sum.gif',
     content: (
       <>
+            <Background/>
         <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
         <div className="wiki-links-list">
           <ul>
