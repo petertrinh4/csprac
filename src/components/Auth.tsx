@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Auth = () => {
-  const GITHUB_OAUTH_URL = 'https://github.com/login/oauth/authorize?client_id=YOUR_CLIENT_ID'; // Replace with your client ID
+  const GITHUB_OAUTH_URL =
+    'https://github.com/login/oauth/authorize?client_id=Ov23lir5KA9TDEFvlOK9';
 
   return (
     <div className="with-navbar p-8 flex flex-col items-center justify-center min-h-[60vh]">
