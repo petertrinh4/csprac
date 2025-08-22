@@ -1,3 +1,22 @@
+.wiki-link {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid #2563eb;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+.wiki-link:hover {
+  background: #e0e7ff;
+  color: #1e40af;
+  border-color: #1e40af;
+  text-decoration: underline;
+}
 .module-info-container {
   padding: 2rem 1rem;
   max-width: 900px;
