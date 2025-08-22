@@ -11,13 +11,60 @@ export const modules: Module[] = [
       <>
         <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" />
         <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" />
-        <a
-          href="https://en.wikipedia.org/wiki/Dynamic_memory_allocation"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for Dynamic Memory Allocation module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Dynamic_memory_allocation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Dynamic Memory Allocation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Dynamic Memory Allocation in C
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/cprogramming/c_dynamic_memory_allocation.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Dynamic Memory Allocation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/c-programming/c-dynamic-memory-allocation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Dynamic Memory Allocation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/dynamic-memory-allocation-in-c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Dynamic Memory Allocation in C
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-right',
@@ -31,13 +78,60 @@ export const modules: Module[] = [
       <>
         <VideoPlayer url="https://www.youtube.com/embed/vgvR515ORaY" />
         <VideoPlayer url="https://www.youtube.com/embed/xGYsEqe9Vl0" />
-        <a
-          href="https://en.wikipedia.org/wiki/Analysis_of_algorithms"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for Algorithm Analysis module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Analysis_of_algorithms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Analysis of Algorithms
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Asymptotic Analysis
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/data_structures_algorithms/algorithm_analysis.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Algorithm Analysis
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/dsa/algorithm-analysis"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Algorithm Analysis
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/analysis-of-algorithms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Analysis of Algorithms
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-left',
@@ -51,13 +145,60 @@ export const modules: Module[] = [
       <>
         <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" />
         <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" />
-        <a
-          href="https://en.wikipedia.org/wiki/Recursion_(computer_science)"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for Recursion module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Recursion_(computer_science)"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Recursion (Computer Science)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/recursion/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Recursion
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/data_structures_algorithms/recursion.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Recursion
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/c-programming/c-recursion"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Recursion
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/recursion-in-c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Recursion in C
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-center',
@@ -70,17 +211,63 @@ export const modules: Module[] = [
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
-
-        <a
-          href="https://en.wikipedia.org/wiki/Linked_list"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for Linked Lists module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Linked_list"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Linked Lists
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/data-structures-linked-list/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Linked List Data Structure
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Linked List Algorithms
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/dsa/linked-list"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Linked List
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/data-structure-linked-list"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Linked List
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
-    img_position: 'module-right',
+    img_position: 'module-left',
   },
   {
     id: 'stacks',
@@ -90,13 +277,60 @@ export const modules: Module[] = [
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
-        <a
-          href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for Stacks and Queues module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Stacks
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/stack-data-structure/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Stack Data Structure
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Stack Algorithm
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/dsa/stack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Stack
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/data-structure-stack"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Stack
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-left',
@@ -110,13 +344,60 @@ export const modules: Module[] = [
       <>
         <VideoPlayer url="https://www.youtube.com/embed/Gt2yBZAhsGM" />
         <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" />
-        <a
-          href="https://en.wikipedia.org/wiki/Binary_search_tree"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for Trees module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Binary_search_tree"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Binary Search Trees
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Binary Search Tree
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Binary Search Tree
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/dsa/binary-search-tree"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Binary Search Tree
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/binary-search-tree"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Binary Search Tree
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-center',
@@ -129,13 +410,60 @@ export const modules: Module[] = [
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
-        <a
-          href="https://en.wikipedia.org/wiki/Sorting_algorithm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for Sorting Algorithms module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Sorting_algorithm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Sorting Algorithm
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/sorting-algorithms/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Sorting Algorithms
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Sorting Algorithms
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/dsa/sorting-algorithm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Sorting Algorithm
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/sorting-algorithms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Sorting Algorithms
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-right',
@@ -148,13 +476,60 @@ export const modules: Module[] = [
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
-        <a
-          href="https://en.wikipedia.org/wiki/Hash_table"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for HashTables module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Hash_table"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Hash Table
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/hashing-data-structure/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Hashing Data Structure
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Hash Data Structure
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/dsa/hash-table"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Hash Table
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/data-structure-hash-table"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Hash Table
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-left',
@@ -168,13 +543,60 @@ export const modules: Module[] = [
       <>
         <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
         <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
-        <a
-          href="https://en.wikipedia.org/wiki/Bitwise_operation"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Content for Bitwise Operators module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Bitwise_operation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Bitwise Operation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Bitwise Operators in C/C++
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/bitwise-operators-in-c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Bitwise Operators in C
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/c-programming/c-bitwise-operators"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Bitwise Operators
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/bitwise-operators-in-c"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Bitwise Operators in C
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-center',
@@ -187,9 +609,60 @@ export const modules: Module[] = [
     content: (
       <>
         <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
-        <a href="https://en.wikipedia.org/wiki/Summation" target="_blank" rel="noopener noreferrer">
-          Content for Summations module.
-        </a>
+        <div className="wiki-links-list">
+          <ul>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Summation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Wikipedia: Summation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.geeksforgeeks.org/summation-in-mathematics/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                GFG: Summation in Mathematics
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.tutorialspoint.com/summation-in-mathematics"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                TutorialsPoint: Summation in Mathematics
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.programiz.com/math/summation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                Programiz: Summation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.javatpoint.com/summation-in-mathematics"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wiki-link"
+              >
+                JavaTpoint: Summation in Mathematics
+              </a>
+            </li>
+          </ul>
+        </div>
       </>
     ),
     img_position: 'module-right',
