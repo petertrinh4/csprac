@@ -33,7 +33,12 @@ const HomePage = () => {
             image="public/linkedlist.webp"
             id="linkedlist"
           />
-          <ModuleCard title="Stacks, Queues" description="" image="public/stack.webp" id="stacks" />
+          <ModuleCard
+            title="Stacks, Queues"
+            description=""
+            image="public/stacks2.webp"
+            id="stacks"
+          />
           <ModuleCard
             title="Binary Search Trees, AVL Trees, Heaps"
             description=""
