@@ -12,56 +12,46 @@ const HomePage = () => {
           <ModuleCard
             title="Dynamic Memory Allocation"
             description=""
-            image="public/pointer.webp"
+            image="/pointer.webp"
             id="dma"
           />
           <ModuleCard
             title="Algorithm Analysis"
             description=""
-            image="public/alg_analysis.webp"
+            image="/alg_analysis.webp"
             id="alg"
           />
           <ModuleCard
             title="Recursion, Recurrence Relations"
             description=""
-            image="public/recursion.webp"
+            image="/recursion.webp"
             id="rec"
           />
           <ModuleCard
             title="Linked Lists"
             description=""
-            image="public/linkedlist.webp"
+            image="/linkedlist.webp"
             id="linkedlist"
           />
-          <ModuleCard
-            title="Stacks, Queues"
-            description=""
-            image="public/stacks2.webp"
-            id="stacks"
-          />
+          <ModuleCard title="Stacks, Queues" description="" image="/stacks2.webp" id="stacks" />
           <ModuleCard
             title="Binary Search Trees, AVL Trees, Heaps"
             description=""
-            image="public/bst.webp"
+            image="/bst.webp"
             id="trees"
           />
-          <ModuleCard
-            title="Sorting Algorithms"
-            description=""
-            image="public/mergesort.webp"
-            id="sort"
-          />
-          <ModuleCard title="HashTables" description="" image="public/hashtables.webp" id="hash" />
+          <ModuleCard title="Sorting Algorithms" description="" image="/mergesort.webp" id="sort" />
+          <ModuleCard title="HashTables" description="" image="/hashtables.webp" id="hash" />
           <ModuleCard
             title="Bitwise Operators, Bitmasking, Base Conversion"
             description=""
-            image="public/binaryconv.webp"
+            image="/binaryconv.webp"
             id="bitwise"
           />
           <ModuleCard
             title="Summations"
             description="Stay tuned for more modules."
-            image="public/sums.webp"
+            image="/sums.webp"
             id="sum"
           />
         </div>
