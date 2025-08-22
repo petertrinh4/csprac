@@ -2,6 +2,7 @@ import type { Module } from './moduleTypes';
 import VideoPlayer from '../components/VideoPlayer';
 import Background from '../components/Background';
 
+
 export const modules: Module[] = [
   {
     id: 'dma',
