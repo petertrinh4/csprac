@@ -17,6 +17,8 @@ const AuthCallback = () => {
           if (data.success && data.user) {
             // Store user info in Supabase
             await signInWithGitHubProfile(data.user);
+            // Store user info in localStorage for NavBar
+            localStorage.setItem('githubUser', JSON.stringify(data.user));
             window.location.href = '/';
           } else {
             alert('GitHub login failed');
