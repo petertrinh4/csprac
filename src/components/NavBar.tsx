@@ -1,6 +1,22 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+const useAuthStatus = () => {
+  const [loggedIn, setLoggedIn] = useState(false);
+  useEffect(() => {
+    setLoggedIn(!!localStorage.getItem('githubUser'));
+  }, []);
+  return loggedIn;
+};
+
 const NavBar = () => {
+  const loggedIn = useAuthStatus();
+
+  const handleSignOut = () => {
+    localStorage.removeItem('githubUser');
+    window.location.reload();
+  };
+
   return (
     <>
       <div className="navbar bg-white text-black shadow-sm fixed top-0 left-0 w-full z-10 flex items-center justify-between">
@@ -19,7 +35,6 @@ const NavBar = () => {
                 Practice
               </Link>
             </li>
-
             <li>
               <details className="relative">
                 <summary className="text-black hover:bg-gray-200">Modules</summary>
@@ -78,9 +93,15 @@ const NavBar = () => {
               </details>
             </li>
             <li>
-              <Link to="/auth" className="text-black hover:bg-gray-200">
-                Login
-              </Link>
+              {loggedIn ? (
+                <button onClick={handleSignOut} className="text-black hover:bg-gray-200">
+                  Sign Out
+                </button>
+              ) : (
+                <Link to="/auth" className="text-black hover:bg-gray-200">
+                  Login
+                </Link>
+              )}
             </li>
           </ul>
         </div>
