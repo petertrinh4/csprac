@@ -1,16 +1,13 @@
-const express = require('express');
-const fetch = require('node-fetch');
-const cors = require('cors');
 
-const app = express();
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
-app.use(express.json());
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
 
-const CLIENT_ID = 'Ov23lir5KA9TDEFvlOK9';
-const CLIENT_SECRET = '9369efa0a91fd5f43e1e6a8dc11cdb1c84d1d951';
-
-app.post('/api/github/callback', async (req, res) => {
   const { code } = req.body;
+  const CLIENT_ID = process.env.CLIENT_ID;
+  const CLIENT_SECRET = process.env.CLIENT_SECRET;
+
   try {
     // Exchange code for access token
     const tokenRes = await fetch('https://github.com/login/oauth/access_token', {
@@ -35,11 +32,8 @@ app.post('/api/github/callback', async (req, res) => {
     });
     const user = await userRes.json();
 
-    // Save user info to session/db here
-    res.json({ success: true, user });
+    res.status(200).json({ success: true, user });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
   }
-});
-
-app.listen(4000, () => console.log('GitHub OAuth server running on http://localhost:4000'));
+}
