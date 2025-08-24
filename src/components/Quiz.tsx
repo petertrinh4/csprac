@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-import Confetti from "react-confetti";
+import { useState, useEffect, useRef } from 'react';
+import Confetti from 'react-confetti';
 
 interface QuizProps {
   questions: {
@@ -11,7 +11,7 @@ interface QuizProps {
 
 const Quiz = ({ questions }: QuizProps) => {
   const [current, setCurrent] = useState(0);
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState('');
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
@@ -40,7 +40,7 @@ const Quiz = ({ questions }: QuizProps) => {
 
   const handleNext = () => {
     if (selected === questions[current]?.answer) setScore(score + 1);
-    setSelected("");
+    setSelected('');
     if (current + 1 < questions.length) {
       setCurrent(current + 1);
     } else {
@@ -75,14 +75,12 @@ const Quiz = ({ questions }: QuizProps) => {
         <>
           <div className="font-semibold text-xl">{questions[current]?.question}</div>
           <div className="flex flex-col space-y-3">
-            {questions[current]?.options.map((option) => (
+            {questions[current]?.options.map(option => (
               <button
                 key={option}
                 onClick={() => setSelected(option)}
                 className={`w-full p-3 rounded-lg border transition-colors duration-200 text-left ${
-                  selected === option
-                    ? "bg-blue-500 text-white"
-                    : "bg-gray-100 hover:bg-blue-100"
+                  selected === option ? 'bg-blue-500 text-white' : 'bg-gray-100 hover:bg-blue-100'
                 }`}
               >
                 {option}

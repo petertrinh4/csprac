@@ -2,7 +2,7 @@ import React from 'react';
 
 const Auth = () => {
   const GITHUB_OAUTH_URL =
-    'https://github.com/login/oauth/authorize?client_id=Ov23lir5KA9TDEFvlOK9';
+    'https://github.com/login/oauth/authorize?client_id=Ov23lir5KA9TDEFvlOK9&redirect_uri=https://cs1-ucf.vercel.app/auth/callback';
 
   return (
     <div className="with-navbar p-8 flex flex-col items-center justify-center min-h-[60vh]">
