@@ -1,19 +1,22 @@
 import { useEffect } from 'react';
+import { signInWithGitHubProfile } from '../utils/githubSupabaseAuth';
 
 const AuthCallback = () => {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const code = params.get('code');
     if (code) {
-      fetch('http://localhost:4000/api/github/callback', {
+      fetch('https://cs1-ucf.vercel.app/api/github/callback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code }),
         credentials: 'include',
       })
         .then(res => res.json())
-        .then(data => {
-          if (data.success) {
+        .then(async data => {
+          if (data.success && data.user) {
+            // Store user info in Supabase
+            await signInWithGitHubProfile(data.user);
             window.location.href = '/';
           } else {
             alert('GitHub login failed');

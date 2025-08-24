@@ -5,7 +5,9 @@ const NavBar = () => {
     <>
       <div className="navbar bg-white text-black shadow-sm fixed top-0 left-0 w-full z-10 flex items-center justify-between">
         <div className="flex items-center">
-          <img src="/ucf.webp" alt="UCF Logo" className="h-10 w-10 ml-4" />
+          <Link to="/">
+            <img src="/ucf.webp" alt="UCF Logo" className="h-10 w-10 ml-4 cursor-pointer" />
+          </Link>
         </div>
         <div className="flex-1 flex justify-center">
           <h1 className="text-xl font-bold"></h1>
@@ -13,18 +15,8 @@ const NavBar = () => {
         <div className="flex items-center">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/" className="text-black hover:bg-gray-200">
-                Home
-              </Link>
-            </li>
-            <li>
               <Link to="/practice" className="text-black hover:bg-gray-200">
                 Practice
-              </Link>
-            </li>
-            <li>
-              <Link to="/resources" className="text-black hover:bg-gray-200">
-                Resources
               </Link>
             </li>
 
