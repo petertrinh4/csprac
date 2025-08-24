@@ -6,7 +6,7 @@ const AuthCallback = () => {
     const params = new URLSearchParams(window.location.search);
     const code = params.get('code');
     if (code) {
-      fetch('https://cs1-ucf.vercel.app/api/github/callback', {
+      fetch('https://cs1-ucf.vercel.app/api/github-callback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code }),
