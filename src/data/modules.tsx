@@ -7,66 +7,12 @@ export const modules: Module[] = [
     id: 'dma',
     title: 'Dynamic Memory Allocation',
     intro: '',
-    image: '/pointers.gif',
+    image: '',
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" />
-        <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" />
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Dynamic_memory_allocation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Dynamic Memory Allocation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Dynamic Memory Allocation in C
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/cprogramming/c_dynamic_memory_allocation.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Dynamic Memory Allocation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/c-programming/c-dynamic-memory-allocation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Dynamic Memory Allocation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/dynamic-memory-allocation-in-c"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Dynamic Memory Allocation in C
-              </a>
-            </li>
-          </ul>
-        </div>
+        <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" title="Module Videos" />
+        <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" title="" />
       </>
     ),
     img_position: 'module-right',
@@ -79,8 +25,14 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/vgvR515ORaY" />
-        <VideoPlayer url="https://www.youtube.com/embed/xGYsEqe9Vl0" />
+        <VideoPlayer
+          url="https://www.youtube.com/embed/vgvR515ORaY"
+          title="Big O Notation and Algorithm Analysis"
+        />
+        <VideoPlayer
+          url="https://www.youtube.com/embed/xGYsEqe9Vl0"
+          title="Best, Worst, and Average Case"
+        />
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -147,8 +99,8 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" />
-        <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" />
+        <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" title="Recursion Explained" />
+        <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" title="Recurrence Relations" />
         <div className="wiki-links-list">
           <ul>
             <li>
