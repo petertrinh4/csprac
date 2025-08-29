@@ -99,5 +99,4 @@ const Quiz = ({ questions }: QuizProps) => {
     </div>
   );
 };
-
 export default Quiz;

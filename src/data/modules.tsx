@@ -16,6 +16,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-right',
+    quizQuestions: [
+      {
+        question: 'Which function allocates memory dynamically in C?',
+        options: ['malloc', 'printf', 'scanf', 'sizeof'],
+        answer: 'malloc',
+      },
+      {
+        question: 'Which function frees dynamically allocated memory?',
+        options: ['free', 'delete', 'exit', 'realloc'],
+        answer: 'free',
+      },
+      {
+        question: 'Which function changes the size of previously allocated memory?',
+        options: ['realloc', 'malloc', 'calloc', 'memset'],
+        answer: 'realloc',
+      },
+      {
+        question: 'Which function allocates memory and initializes it to 0?',
+        options: ['calloc', 'malloc', 'free', 'memcpy'],
+        answer: 'calloc',
+      },
+      {
+        question: 'Dynamic memory allocation occurs at:',
+        options: ['runtime', 'compile time', 'link time', 'preprocessor time'],
+        answer: 'runtime',
+      },
+    ],
+    flashcards: [
+      { front: 'malloc', back: 'Allocates memory dynamically in C.' },
+      { front: 'free', back: 'Frees dynamically allocated memory.' },
+      { front: 'calloc', back: 'Allocates and initializes memory to zero.' },
+      { front: 'realloc', back: 'Changes the size of previously allocated memory.' },
+      { front: 'Dynamic Allocation', back: 'Occurs at runtime.' },
+    ],
   },
   {
     id: 'alg',
@@ -90,6 +124,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-left',
+    quizQuestions: [
+      {
+        question: 'What does Big O notation describe?',
+        options: ['Best case', 'Worst case', 'Average case', 'All cases'],
+        answer: 'Worst case',
+      },
+      {
+        question: 'Which complexity is better for large datasets?',
+        options: ['O(n^2)', 'O(n log n)', 'O(2^n)', 'O(n^3)'],
+        answer: 'O(n log n)',
+      },
+      {
+        question: 'What is the time complexity of binary search?',
+        options: ['O(n)', 'O(log n)', 'O(n^2)', 'O(1)'],
+        answer: 'O(log n)',
+      },
+      {
+        question: 'What does O(1) represent?',
+        options: ['Linear time', 'Constant time', 'Logarithmic time', 'Quadratic time'],
+        answer: 'Constant time',
+      },
+      {
+        question: 'Which notation describes upper bound?',
+        options: ['Omega (Ω)', 'Theta (Θ)', 'Big O (O)', 'All of the above'],
+        answer: 'Big O (O)',
+      },
+    ],
+    flashcards: [
+      { front: 'Big O', back: 'Describes the upper bound of an algorithm.' },
+      { front: 'O(1)', back: 'Constant time complexity.' },
+      { front: 'O(n log n)', back: 'Efficient for large datasets.' },
+      { front: 'Worst Case', back: 'Big O notation describes this.' },
+      { front: 'Theta', back: 'Describes tight bound.' },
+    ],
   },
   {
     id: 'rec',
@@ -158,6 +226,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-center',
+    quizQuestions: [
+      {
+        question: 'What is recursion?',
+        options: ['A loop', 'A function calling itself', 'A variable', 'A data structure'],
+        answer: 'A function calling itself',
+      },
+      {
+        question: 'Which problem is best solved using recursion?',
+        options: ['Sorting', 'Factorial', 'Searching', 'All of the above'],
+        answer: 'Factorial',
+      },
+      {
+        question: 'What is the base case in recursion?',
+        options: ['The recursive call', 'The stopping condition', 'The function definition', 'The loop'],
+        answer: 'The stopping condition',
+      },
+      {
+        question: 'Which of the following is NOT a recursive problem?',
+        options: ['Tower of Hanoi', 'Fibonacci', 'Binary Search', 'Bubble Sort'],
+        answer: 'Bubble Sort',
+      },
+      {
+        question: 'Recurrence relations are used to:',
+        options: ['Describe recursive algorithms', 'Sort arrays', 'Allocate memory', 'None of the above'],
+        answer: 'Describe recursive algorithms',
+      },
+    ],
+    flashcards: [
+      { front: 'Recursion', back: 'A function calling itself.' },
+      { front: 'Base Case', back: 'The stopping condition in recursion.' },
+      { front: 'Recurrence Relation', back: 'Describes recursive algorithms.' },
+      { front: 'Factorial', back: 'Common recursive problem.' },
+      { front: 'Tower of Hanoi', back: 'Solved using recursion.' },
+    ],
   },
   {
     id: 'linkedlist',
@@ -225,6 +327,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-left',
+    quizQuestions: [
+      {
+        question: 'What is a linked list?',
+        options: ['A collection of arrays', 'A sequence of nodes', 'A type of tree', 'A sorting algorithm'],
+        answer: 'A sequence of nodes',
+      },
+      {
+        question: 'Which pointer does the last node of a singly linked list contain?',
+        options: ['Head', 'Tail', 'Null', 'Random'],
+        answer: 'Null',
+      },
+      {
+        question: 'Which operation is fastest in a linked list?',
+        options: ['Insertion', 'Searching', 'Sorting', 'Accessing by index'],
+        answer: 'Insertion',
+      },
+      {
+        question: 'Which type of linked list allows traversal in both directions?',
+        options: ['Singly', 'Doubly', 'Circular', 'None'],
+        answer: 'Doubly',
+      },
+      {
+        question: 'What is the time complexity to access the nth element in a singly linked list?',
+        options: ['O(1)', 'O(n)', 'O(log n)', 'O(n^2)'],
+        answer: 'O(n)',
+      },
+    ],
+    flashcards: [
+      { front: 'Linked List', back: 'A sequence of nodes.' },
+      { front: 'Node', back: 'Contains data and pointer(s).' },
+      { front: 'Singly Linked List', back: 'Nodes point to next node only.' },
+      { front: 'Doubly Linked List', back: 'Nodes point to next and previous nodes.' },
+      { front: 'Null', back: 'Last node points to null.' },
+    ],
   },
   {
     id: 'stacks',
@@ -292,6 +428,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-left',
+    quizQuestions: [
+      {
+        question: 'What is the main principle of a stack?',
+        options: ['FIFO', 'LIFO', 'LILO', 'FILO'],
+        answer: 'LIFO',
+      },
+      {
+        question: 'Which operation removes the top element from a stack?',
+        options: ['Push', 'Pop', 'Peek', 'Insert'],
+        answer: 'Pop',
+      },
+      {
+        question: 'Which data structure is used for breadth-first search?',
+        options: ['Stack', 'Queue', 'Tree', 'Graph'],
+        answer: 'Queue',
+      },
+      {
+        question: 'What is the time complexity of push and pop in a stack?',
+        options: ['O(1)', 'O(n)', 'O(log n)', 'O(n^2)'],
+        answer: 'O(1)',
+      },
+      {
+        question: 'Which operation returns the front element of a queue without removing it?',
+        options: ['Enqueue', 'Dequeue', 'Peek', 'Push'],
+        answer: 'Peek',
+      },
+    ],
+    flashcards: [
+      { front: 'Stack', back: 'LIFO data structure.' },
+      { front: 'Queue', back: 'FIFO data structure.' },
+      { front: 'Push', back: 'Adds element to stack.' },
+      { front: 'Pop', back: 'Removes element from stack.' },
+      { front: 'Enqueue', back: 'Adds element to queue.' },
+    ],
   },
   {
     id: 'trees',
@@ -360,6 +530,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-center',
+    quizQuestions: [
+      {
+        question: 'What is a binary search tree?',
+        options: ['A tree with two children', 'A sorted tree', 'A tree where left < root < right', 'A heap'],
+        answer: 'A tree where left < root < right',
+      },
+      {
+        question: 'Which tree is self-balancing?',
+        options: ['BST', 'AVL', 'Trie', 'Heap'],
+        answer: 'AVL',
+      },
+      {
+        question: 'What is the time complexity of search in a balanced BST?',
+        options: ['O(1)', 'O(n)', 'O(log n)', 'O(n^2)'],
+        answer: 'O(log n)',
+      },
+      {
+        question: 'Which data structure is used for prefix matching?',
+        options: ['Heap', 'Trie', 'BST', 'AVL'],
+        answer: 'Trie',
+      },
+      {
+        question: 'Which heap property is true?',
+        options: ['Parent < Child', 'Parent > Child', 'Parent = Child', 'No relation'],
+        answer: 'Parent < Child',
+      },
+    ],
+    flashcards: [
+      { front: 'BST', back: 'Binary Search Tree.' },
+      { front: 'AVL', back: 'Self-balancing BST.' },
+      { front: 'Trie', back: 'Used for prefix matching.' },
+      { front: 'Heap', back: 'Complete binary tree.' },
+      { front: 'O(log n)', back: 'Search time in balanced BST.' },
+    ],
   },
   {
     id: 'sort',
@@ -427,6 +631,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-right',
+    quizQuestions: [
+      {
+        question: 'Which sorting algorithm is stable?',
+        options: ['Selection Sort', 'Bubble Sort', 'Quick Sort', 'Heap Sort'],
+        answer: 'Bubble Sort',
+      },
+      {
+        question: 'What is the time complexity of merge sort?',
+        options: ['O(n)', 'O(n log n)', 'O(n^2)', 'O(log n)'],
+        answer: 'O(n log n)',
+      },
+      {
+        question: 'Which algorithm is not comparison-based?',
+        options: ['Radix Sort', 'Quick Sort', 'Merge Sort', 'Bubble Sort'],
+        answer: 'Radix Sort',
+      },
+      {
+        question: 'Which sort is best for nearly sorted data?',
+        options: ['Insertion Sort', 'Selection Sort', 'Heap Sort', 'Quick Sort'],
+        answer: 'Insertion Sort',
+      },
+      {
+        question: 'Which sorting algorithm has worst-case O(n^2)?',
+        options: ['Merge Sort', 'Quick Sort', 'Bubble Sort', 'Heap Sort'],
+        answer: 'Bubble Sort',
+      },
+    ],
+    flashcards: [
+      { front: 'Bubble Sort', back: 'Stable sorting algorithm.' },
+      { front: 'Merge Sort', back: 'O(n log n) time complexity.' },
+      { front: 'Radix Sort', back: 'Not comparison-based.' },
+      { front: 'Insertion Sort', back: 'Best for nearly sorted data.' },
+      { front: 'Selection Sort', back: 'Simple but inefficient.' },
+    ],
   },
   {
     id: 'hash',
@@ -494,6 +732,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-left',
+    quizQuestions: [
+      {
+        question: 'What is a hash table?',
+        options: ['A tree', 'A mapping of keys to values', 'A sorting algorithm', 'A stack'],
+        answer: 'A mapping of keys to values',
+      },
+      {
+        question: 'What is a hash function?',
+        options: ['A function that sorts', 'A function that maps keys to indices', 'A function that searches', 'A function that deletes'],
+        answer: 'A function that maps keys to indices',
+      },
+      {
+        question: 'What is collision in hash tables?',
+        options: ['Two keys map to same index', 'Key not found', 'Table is full', 'Key is deleted'],
+        answer: 'Two keys map to same index',
+      },
+      {
+        question: 'Which method resolves collisions?',
+        options: ['Chaining', 'Sorting', 'Searching', 'Stacking'],
+        answer: 'Chaining',
+      },
+      {
+        question: 'What is the average time complexity for search in a hash table?',
+        options: ['O(1)', 'O(n)', 'O(log n)', 'O(n^2)'],
+        answer: 'O(1)',
+      },
+    ],
+    flashcards: [
+      { front: 'Hash Table', back: 'Maps keys to values.' },
+      { front: 'Hash Function', back: 'Maps keys to indices.' },
+      { front: 'Collision', back: 'Two keys map to same index.' },
+      { front: 'Chaining', back: 'Method to resolve collisions.' },
+      { front: 'O(1)', back: 'Average search time.' },
+    ],
   },
   {
     id: 'bitwise',
@@ -562,6 +834,40 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-center',
+    quizQuestions: [
+      {
+        question: 'What does the & operator do?',
+        options: ['OR', 'AND', 'XOR', 'NOT'],
+        answer: 'AND',
+      },
+      {
+        question: 'Which operator shifts bits to the left?',
+        options: ['>>', '<<', '&', '|'],
+        answer: '<<',
+      },
+      {
+        question: 'What is bitmasking used for?',
+        options: ['Sorting', 'Setting/clearing bits', 'Searching', 'Looping'],
+        answer: 'Setting/clearing bits',
+      },
+      {
+        question: 'What is the binary representation of 5?',
+        options: ['101', '110', '111', '100'],
+        answer: '101',
+      },
+      {
+        question: 'Which base is used in binary?',
+        options: ['2', '8', '10', '16'],
+        answer: '2',
+      },
+    ],
+    flashcards: [
+      { front: 'AND (&)', back: 'Bitwise AND operator.' },
+      { front: 'OR (|)', back: 'Bitwise OR operator.' },
+      { front: 'XOR (^)', back: 'Bitwise XOR operator.' },
+      { front: '<<', back: 'Left shift operator.' },
+      { front: 'Bitmasking', back: 'Setting/clearing bits.' },
+    ],
   },
   {
     id: 'sum',
@@ -629,5 +935,39 @@ export const modules: Module[] = [
       </>
     ),
     img_position: 'module-right',
+    quizQuestions: [
+      {
+        question: 'What is a summation?',
+        options: ['A product', 'A sum of terms', 'A division', 'A subtraction'],
+        answer: 'A sum of terms',
+      },
+      {
+        question: 'Which symbol is used for summation?',
+        options: ['∑', 'π', '√', '∞'],
+        answer: '∑',
+      },
+      {
+        question: 'What is the sum of the first n natural numbers?',
+        options: ['n(n+1)/2', 'n^2', '2n', 'n+1'],
+        answer: 'n(n+1)/2',
+      },
+      {
+        question: 'What is the sum of a geometric series?',
+        options: ['a/(1-r)', 'a*r', 'a+n', 'a^n'],
+        answer: 'a/(1-r)',
+      },
+      {
+        question: 'Which summation is infinite?',
+        options: ['Finite sum', 'Infinite series', 'Product', 'None'],
+        answer: 'Infinite series',
+      },
+    ],
+    flashcards: [
+      { front: 'Summation (∑)', back: 'Sum of terms.' },
+      { front: 'n(n+1)/2', back: 'Sum of first n natural numbers.' },
+      { front: 'Geometric Series', back: 'Sum: a/(1-r).' },
+      { front: 'Infinite Series', back: 'Sum with infinite terms.' },
+      { front: 'Finite Sum', back: 'Sum with finite terms.' },
+    ],
   },
 ];
