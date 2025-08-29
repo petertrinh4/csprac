@@ -22,7 +22,7 @@ const NavBar = () => {
       <div className="navbar bg-white text-black shadow-sm fixed top-0 left-0 w-full z-10 flex items-center justify-between">
         <div className="flex items-center">
           <Link to="/">
-            <img src="/ucf.webp" alt="UCF Logo" className="h-10 w-10 ml-4 cursor-pointer" />
+            <img src="/ucfpegasus.webp" alt="UCF Logo" className="h-10 w-10 ml-4 cursor-pointer" />
           </Link>
         </div>
         <div className="flex-1 flex justify-center">
