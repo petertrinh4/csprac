@@ -31,11 +31,6 @@ const NavBar = () => {
         <div className="flex items-center">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/practice" className="text-black hover:bg-gray-200">
-                Practice
-              </Link>
-            </li>
-            <li>
               <details className="relative">
                 <summary className="text-black hover:bg-gray-200">Modules</summary>
                 <ul className="bg-white text-black rounded-t-none p-2 w-96 absolute left-0 md:left-auto md:right-0">

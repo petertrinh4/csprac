@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage.tsx';
-import Practice from './components/Practice';
 import Auth from './components/Auth';
 import AuthCallback from './components/AuthCallback';
 import ModuleInfo from './components/ModuleInfo.tsx';
@@ -14,7 +13,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/module/:id" element={<ModuleInfoWrapper modules={modules} />} />
-        <Route path="/practice" element={<Practice />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/auth/callback" element={<AuthCallback />} />
       </Routes>
