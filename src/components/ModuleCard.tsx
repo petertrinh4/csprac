@@ -19,7 +19,7 @@ const ModuleCard = ({ title, description, image, id }: ModuleCardProps) => {
           <p>{description}</p>
           <div className="card-actions">
             <Link to={`/module/${id}`}>
-              <button className="btn btn-primary">Learn more</button>
+              <button className="btn bg-green-700 hover:bg-green-400 text-white border-none">Learn more</button>
             </Link>
           </div>
         </div>
