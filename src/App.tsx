@@ -35,6 +35,8 @@ function ModuleInfoWrapper({ modules }: { modules: Module[] }) {
       image={module.image}
       content={module.content}
       img_position={module.img_position}
+      quizQuestions={module.quizQuestions}
+      flashcards={module.flashcards}
     />
   );
 }

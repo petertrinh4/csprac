@@ -7,4 +7,13 @@ export type Module = {
   image: string;
   content: ReactNode;
   img_position: string;
+  quizQuestions?: {
+    question: string;
+    options: string[];
+    answer: string;
+  }[];
+  flashcards?: {
+    front: string;
+    back: string;
+  }[];
 };

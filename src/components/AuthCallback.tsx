@@ -29,5 +29,4 @@ const AuthCallback = () => {
 
   return <div>Authenticating with GitHub...</div>;
 };
-
 export default AuthCallback;
