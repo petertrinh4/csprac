@@ -3,6 +3,7 @@ import HomePage from './components/HomePage.tsx';
 import Auth from './components/Auth';
 import AuthCallback from './components/AuthCallback';
 import ModuleInfo from './components/ModuleInfo.tsx';
+import ExtraResources from './components/ExtraResources';
 import { useParams } from 'react-router-dom';
 import { modules } from './data/modules.tsx';
 import type { Module } from './data/moduleTypes';
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/module/:id" element={<ModuleInfoWrapper modules={modules} />} />
         <Route path="/auth" element={<Auth />} />
         <Route path="/auth/callback" element={<AuthCallback />} />
+        <Route path="/resources" element={<ExtraResources />} />
       </Routes>
     </>
   );

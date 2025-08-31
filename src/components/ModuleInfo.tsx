@@ -10,18 +10,30 @@ type ModuleInfoProps = {
   image: string;
   content: ReactNode;
   img_position: string;
-  quizQuestions?: {
-    question: string;
-    options: string[];
-    answer: string;
-  }[] | undefined;
-  flashcards?: {
-    front: string;
-    back: string;
-  }[] | undefined;
+  quizQuestions?:
+    | {
+        question: string;
+        options: string[];
+        answer: string;
+      }[]
+    | undefined;
+  flashcards?:
+    | {
+        front: string;
+        back: string;
+      }[]
+    | undefined;
 };
 
-const ModuleInfo = ({ title, intro, image, content, img_position, quizQuestions, flashcards }: ModuleInfoProps) => {
+const ModuleInfo = ({
+  title,
+  intro,
+  image,
+  content,
+  img_position,
+  quizQuestions,
+  flashcards,
+}: ModuleInfoProps) => {
   return (
     <div>
       <NavBar />
@@ -29,7 +41,7 @@ const ModuleInfo = ({ title, intro, image, content, img_position, quizQuestions,
         <h1 className="module-title">{title}</h1>
         <div className={`flex flex-row gap-8 items-start`}>
           <div className="flex-1">
-            <div className={`module-flex ${img_position === 'right' ? 'reverse' : ''}`}> 
+            <div className={`module-flex ${img_position === 'right' ? 'reverse' : ''}`}>
               <div className="module-image-wrapper">
                 {/*<img src={image} alt={title} className="module-image" />*/}
               </div>
@@ -47,9 +59,7 @@ const ModuleInfo = ({ title, intro, image, content, img_position, quizQuestions,
                 </div>
               </div>
             )}
-            {flashcards && flashcards.length > 0 && (
-              <Flashcard flashcards={flashcards} />
-            )}
+            {flashcards && flashcards.length > 0 && <Flashcard flashcards={flashcards} />}
           </div>
         </div>
       </div>

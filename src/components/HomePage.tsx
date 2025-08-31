@@ -40,7 +40,12 @@ const HomePage = () => {
             image="/bst1.webp"
             id="trees"
           />
-          <ModuleCard title="Sorting Algorithms" description="" image="/mergesort2.webp" id="sort" />
+          <ModuleCard
+            title="Sorting Algorithms"
+            description=""
+            image="/mergesort2.webp"
+            id="sort"
+          />
           <ModuleCard title="HashTables" description="" image="/hshtbl.webp" id="hash" />
           <ModuleCard
             title="Bitwise Operators, Bitmasking, Base Conversion"

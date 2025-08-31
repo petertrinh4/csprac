@@ -36,23 +36,34 @@ const Flashcard = ({ flashcards }: { flashcards: FlashcardType[] }) => {
         onClick={handleFlip}
         style={{ perspective: '1000px' }}
       >
-        <div className="card-body p-4" style={{ minHeight: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div
+          className="card-body p-4 flex flex-col items-center justify-center"
+          style={{ minHeight: '120px' }}
+        >
           {!flipped ? (
-            <h2 className="card-title text-base mb-2">{card.front}</h2>
+            <>
+              <h2 className="card-title text-base mb-2">{card.front}</h2>
+              <div className="mt-2 text-sm text-gray-600 text-center">
+                Click on the card to see the answer.
+              </div>
+            </>
           ) : (
-            <p>{card.back}</p>
+            <>
+              <p>{card.back}</p>
+              <div className="mt-2 text-sm text-gray-600 text-center">
+                Click on the card to flip back.
+              </div>
+            </>
           )}
         </div>
       </div>
       <div className="flex gap-2 mt-2">
-        <button
-          className="btn btn-sm btn-outline"
-          onClick={handlePrev}
-          disabled={current === 0}
-        >
+        <button className="btn btn-sm btn-outline" onClick={handlePrev} disabled={current === 0}>
           Previous
         </button>
-        <span className="text-sm text-gray-500">{current + 1} / {flashcards.length}</span>
+        <span className="text-sm text-gray-500">
+          {current + 1} / {flashcards.length}
+        </span>
         <button
           className="btn btn-sm btn-outline"
           onClick={handleNext}

@@ -26,7 +26,7 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="flex-1 flex justify-center">
-          <h1 className="text-xl font-bold"></h1>
+          <h1 className="text-xl font-bold">CS1 PREP</h1>
         </div>
         <div className="flex items-center">
           <ul className="menu menu-horizontal px-1">
@@ -46,7 +46,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <Link to="/module/rec" className="text-black hover:bg-gray-200">
-                      Recursion, Recurrence Relations
+                      Recursion & Recurrence Relations
                     </Link>
                   </li>
                   <li>
@@ -56,12 +56,12 @@ const NavBar = () => {
                   </li>
                   <li>
                     <Link to="/module/stacks" className="text-black hover:bg-gray-200">
-                      Stacks, Queues
+                      Stacks & Queues
                     </Link>
                   </li>
                   <li>
                     <Link to="/module/trees" className="text-black hover:bg-gray-200">
-                      Binary Search Trees, AVL Trees, Tries, Heaps
+                      BST, AVL Trees, Tries, Heaps
                     </Link>
                   </li>
                   <li>
@@ -71,7 +71,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <Link to="/module/hash" className="text-black hover:bg-gray-200">
-                      HashTables
+                      Hash Tables
                     </Link>
                   </li>
                   <li>
@@ -86,6 +86,11 @@ const NavBar = () => {
                   </li>
                 </ul>
               </details>
+            </li>
+            <li>
+              <Link to="/resources" className="text-black hover:bg-gray-200">
+                Resources
+              </Link>
             </li>
             <li>
               {loggedIn ? (
