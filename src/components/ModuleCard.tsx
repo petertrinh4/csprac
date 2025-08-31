@@ -10,7 +10,7 @@ type ModuleCardProps = {
 const ModuleCard = ({ title, description, image, id }: ModuleCardProps) => {
   return (
     <>
-      <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="card w-96 shadow-sm" style={{ background: '#F5F6F7' }}>
         <figure className="px-10 pt-10">
           <img src={image} alt={title} className="rounded-xl" />
         </figure>
@@ -19,7 +19,10 @@ const ModuleCard = ({ title, description, image, id }: ModuleCardProps) => {
           <p>{description}</p>
           <div className="card-actions">
             <Link to={`/module/${id}`}>
-              <button className="btn bg-green-700 hover:bg-green-400 text-white border-none">
+              <button
+                className="btn text-white border-none"
+                style={{ background: '#bc9902', color: '#fff' }}
+              >
                 Learn more
               </button>
             </Link>
