@@ -19,10 +19,13 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="navbar bg-white text-black shadow-sm fixed top-0 left-0 w-full z-10 flex items-center justify-between">
+      <div
+        className="navbar text-black shadow-sm fixed top-0 left-0 w-full z-10 flex items-center justify-between"
+        style={{ background: '#F5F6F7' }}
+      >
         <div className="flex items-center">
           <Link to="/">
-            <img src="/ucfpegasus.webp" alt="UCF Logo" className="h-10 w-10 ml-4 cursor-pointer" />
+            <img src="/pegasuslogo.webp" alt="UCF Logo" className="h-10 w-10 ml-4 cursor-pointer" />
           </Link>
         </div>
         <div className="flex-1 flex justify-center">
@@ -30,11 +33,6 @@ const NavBar = () => {
         </div>
         <div className="flex items-center">
           <ul className="menu menu-horizontal px-1">
-            <li>
-              <Link to="/practice" className="text-black hover:bg-gray-200">
-                Practice
-              </Link>
-            </li>
             <li>
               <details className="relative">
                 <summary className="text-black hover:bg-gray-200">Modules</summary>
@@ -51,7 +49,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <Link to="/module/rec" className="text-black hover:bg-gray-200">
-                      Recursion, Recurrence Relations
+                      Recursion & Recurrence Relations
                     </Link>
                   </li>
                   <li>
@@ -61,12 +59,12 @@ const NavBar = () => {
                   </li>
                   <li>
                     <Link to="/module/stacks" className="text-black hover:bg-gray-200">
-                      Stacks, Queues
+                      Stacks & Queues
                     </Link>
                   </li>
                   <li>
                     <Link to="/module/trees" className="text-black hover:bg-gray-200">
-                      Binary Search Trees, AVL Trees, Tries, Heaps
+                      BST, AVL Trees, Tries, Heaps
                     </Link>
                   </li>
                   <li>
@@ -76,7 +74,7 @@ const NavBar = () => {
                   </li>
                   <li>
                     <Link to="/module/hash" className="text-black hover:bg-gray-200">
-                      HashTables
+                      Hash Tables
                     </Link>
                   </li>
                   <li>
@@ -91,6 +89,11 @@ const NavBar = () => {
                   </li>
                 </ul>
               </details>
+            </li>
+            <li>
+              <Link to="/resources" className="text-black hover:bg-gray-200">
+                Resources
+              </Link>
             </li>
             <li>
               {loggedIn ? (

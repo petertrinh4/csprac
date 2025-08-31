@@ -10,18 +10,30 @@ type ModuleInfoProps = {
   image: string;
   content: ReactNode;
   img_position: string;
-  quizQuestions?: {
-    question: string;
-    options: string[];
-    answer: string;
-  }[] | undefined;
-  flashcards?: {
-    front: string;
-    back: string;
-  }[] | undefined;
+  quizQuestions?:
+    | {
+        question: string;
+        options: string[];
+        answer: string;
+      }[]
+    | undefined;
+  flashcards?:
+    | {
+        front: string;
+        back: string;
+      }[]
+    | undefined;
 };
 
-const ModuleInfo = ({ title, intro, image, content, img_position, quizQuestions, flashcards }: ModuleInfoProps) => {
+const ModuleInfo = ({
+  title,
+  intro,
+  image,
+  content,
+  img_position,
+  quizQuestions,
+  flashcards,
+}: ModuleInfoProps) => {
   return (
     <div>
       <NavBar />

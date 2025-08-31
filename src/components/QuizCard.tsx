@@ -139,5 +139,4 @@ const QuizCard: React.FC = () => {
     </div>
   );
 };
-
 export default QuizCard;

@@ -30,7 +30,7 @@ const Flashcard = ({ flashcards }: { flashcards: FlashcardType[] }) => {
   }
 
   return (
-    <div className="flex flex-col items-center gap-6"> {/* Changed alignment to 'items-center' */}
+    <div className="flex flex-col items-center gap-6">
       <div
         className="card w-96 shadow-xl rounded-3xl cursor-pointer transition-transform duration-300 transform hover:scale-105"
         onClick={handleFlip}
@@ -41,16 +41,13 @@ const Flashcard = ({ flashcards }: { flashcards: FlashcardType[] }) => {
         }}
       >
         <div
-          className="card-body p-8"
+          className="card-body p-8 flex flex-col items-center justify-center"
           style={{
             minHeight: '160px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
             borderRadius: 'inherit',
             background: flipped
-              ? 'linear-gradient(135deg, #d3d3d3, #f0f0f0)' // Light smoky grey gradient for flipped side
-              : 'linear-gradient(135deg, #e0e0e0, #f5f5f5)', // Light smoky grey gradient for front side
+              ? 'linear-gradient(135deg, #d3d3d3, #f0f0f0)'
+              : 'linear-gradient(135deg, #e0e0e0, #f5f5f5)',
             boxShadow: flipped
               ? 'inset 0 0 12px rgba(0, 0, 0, 0.1)'
               : 'inset 0 0 6px rgba(0, 0, 0, 0.05)',
@@ -58,9 +55,19 @@ const Flashcard = ({ flashcards }: { flashcards: FlashcardType[] }) => {
           }}
         >
           {!flipped ? (
-            <h2 className="card-title text-xl font-bold text-gray-800">{card.front}</h2>
+            <>
+              <h2 className="card-title text-xl font-bold text-gray-800">{card.front}</h2>
+              <div className="mt-2 text-sm text-gray-600 text-center">
+                Click on the card to see the answer.
+              </div>
+            </>
           ) : (
-            <p className="card-title text-xl font-bold text-gray-800">{card.back}</p> 
+            <>
+              <p className="card-title text-xl font-bold text-gray-800">{card.back}</p>
+              <div className="mt-2 text-sm text-gray-600 text-center">
+                Click on the card to flip back.
+              </div>
+            </>
           )}
         </div>
       </div>
@@ -70,8 +77,8 @@ const Flashcard = ({ flashcards }: { flashcards: FlashcardType[] }) => {
           style={{
             borderColor: '#bc9904',
             color: '#bc9904',
-            opacity: current === 0 ? 0.5 : 1, // Reduce opacity when disabled
-            cursor: current === 0 ? 'not-allowed' : 'pointer', // Change cursor when disabled
+            opacity: current === 0 ? 0.5 : 1,
+            cursor: current === 0 ? 'not-allowed' : 'pointer',
           }}
           onClick={handlePrev}
           disabled={current === 0}
@@ -84,8 +91,8 @@ const Flashcard = ({ flashcards }: { flashcards: FlashcardType[] }) => {
           style={{
             borderColor: '#bc9904',
             color: '#bc9904',
-            opacity: current === flashcards.length - 1 ? 0.5 : 1, // Reduce opacity when disabled
-            cursor: current === flashcards.length - 1 ? 'not-allowed' : 'pointer', // Change cursor when disabled
+            opacity: current === flashcards.length - 1 ? 0.5 : 1,
+            cursor: current === flashcards.length - 1 ? 'not-allowed' : 'pointer',
           }}
           onClick={handleNext}
           disabled={current === flashcards.length - 1}
@@ -96,4 +103,5 @@ const Flashcard = ({ flashcards }: { flashcards: FlashcardType[] }) => {
     </div>
   );
 };
+
 export default Flashcard;
