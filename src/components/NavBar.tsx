@@ -19,14 +19,17 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="navbar bg-white text-black shadow-sm fixed top-0 left-0 w-full z-10 flex items-center justify-between">
+      <div
+        className="navbar text-black shadow-sm fixed top-0 left-0 w-full z-10 flex items-center justify-between"
+        style={{ background: '#F5F6F7' }}
+      >
         <div className="flex items-center">
           <Link to="/">
-            <img src="/ucfpegasus.webp" alt="UCF Logo" className="h-10 w-10 ml-4 cursor-pointer" />
+            <img src="/pegasuslogo.webp" alt="UCF Logo" className="h-10 w-10 ml-4 cursor-pointer" />
           </Link>
         </div>
         <div className="flex-1 flex justify-center">
-          <h1 className="text-xl font-bold">CS1 PREP</h1>
+          <h1 className="text-xl font-bold"></h1>
         </div>
         <div className="flex items-center">
           <ul className="menu menu-horizontal px-1">
