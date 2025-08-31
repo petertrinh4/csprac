@@ -4,19 +4,19 @@ import NavBar from './NavBar';
 const extraResources = [
   {
     title: 'VisuAlgo',
-    image: '/public/optiver.webp',
+    image: '/optiver.webp',
     url: 'https://visualgo.net/en',
     description: 'Visualize data structures and algorithms interactively.',
   },
   {
     title: 'CS Vis Tool',
-    image: '/public/georgia.webp',
+    image: '/georgia.webp',
     url: 'https://csvistool.com/',
     description: 'Practice and visualize CS concepts.',
   },
   {
     title: 'FE Prep Problems',
-    image: '/public/feprep.webp',
+    image: '/feprep.webp',
     url: 'https://feprep.net/problems',
     description: 'Collection of practice problems for FE exam preparation.',
   },
