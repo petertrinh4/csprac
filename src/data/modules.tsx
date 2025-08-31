@@ -1337,11 +1337,7 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/QnvywVuY7qY"
-          title="Summation Notation | Sigma Notation | Don't Memorise"
-        />
+    <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
         <div className="wiki-links-list">
           <ul>
             <li>
