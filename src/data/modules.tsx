@@ -11,8 +11,12 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" title="Module Videos" />
-        <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" title="" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" title="Module Videos" />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" title="" />
+        </div>
       </>
     ),
     img_position: 'module-right',
@@ -59,14 +63,18 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/vgvR515ORaY"
-          title="Big O Notation and Algorithm Analysis"
-        />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/xGYsEqe9Vl0"
-          title="Best, Worst, and Average Case"
-        />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer
+            url="https://www.youtube.com/embed/vgvR515ORaY"
+            title="Big O Notation and Algorithm Analysis"
+          />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer
+            url="https://www.youtube.com/embed/xGYsEqe9Vl0"
+            title="Best, Worst, and Average Case"
+          />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -167,8 +175,12 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" title="Recursion Explained" />
-        <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" title="Recurrence Relations" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" title="Recursion Explained" />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" title="Recurrence Relations" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -269,7 +281,9 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -370,7 +384,9 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -471,8 +487,12 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/Gt2yBZAhsGM" />
-        <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/Gt2yBZAhsGM" />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -573,7 +593,9 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -674,7 +696,9 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -775,8 +799,12 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
-        <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -877,7 +905,9 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>

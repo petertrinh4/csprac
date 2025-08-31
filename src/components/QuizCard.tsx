@@ -78,7 +78,7 @@ const QuizCard: React.FC = () => {
   const isComplete = currentQuestion === quizQuestions.length - 1 && showResult;
 
   return (
-    <div className="bg-gradient-to-br from-blue-500 to-green-500 rounded-lg p-6 text-white relative overflow-hidden">
+    <div className="bg-gradient-to-br from-blue-500 to-green-500 rounded-lg p-6 text-white relative overflow-hidden max-w-screen-md mx-auto">
       <div className="absolute top-4 right-4 bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">
         {currentQuestion + 1} / {quizQuestions.length}
       </div>
