@@ -28,28 +28,33 @@ const ExtraResources: React.FC = () => {
     <>
       <Background />
       <NavBar />
-      <div style={{ position: 'relative', minHeight: '100vh' }}>
+      <div style={{ position: 'relative', minHeight: '100vh' }} className="flex justify-center items-start w-full">
         <div
-          className="pt-20 p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="pt-20 p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center"
           style={{ position: 'relative', zIndex: 1 }}
         >
-          {extraResources.map(resource => (
-            <a
-              key={resource.title}
-              href={resource.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col items-center p-4"
-            >
-              <img
-                src={resource.image}
-                alt={resource.title}
-                className="w-32 h-32 object-contain mb-4"
-              />
-              <h3 className="text-lg font-bold mb-2">{resource.title}</h3>
-              <p className="text-gray-600 text-center mb-2">{resource.description}</p>
-            </a>
-          ))}
+            {extraResources.map(resource => (
+              <a
+                key={resource.title}
+                href={resource.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card w-96 shadow-sm hover:shadow-xl transition-shadow flex flex-col items-center"
+                style={{ background: '#F5F6F7', textDecoration: 'none' }}
+              >
+                <figure className="px-10 pt-10">
+                  <img
+                    src={resource.image}
+                    alt={resource.title}
+                    className="rounded-xl w-32 h-32 object-contain mb-4"
+                  />
+                </figure>
+                <div className="card-body items-center text-center p-4">
+                  <h3 className="card-title text-lg font-bold mb-2">{resource.title}</h3>
+                  <p className="text-gray-600 text-center mb-2">{resource.description}</p>
+                </div>
+              </a>
+            ))}
         </div>
       </div>
     </>
