@@ -3,6 +3,7 @@ import NavBar from './NavBar';
 import QuizCard from './QuizCard';
 import Quiz from '../components/Quiz';
 import Flashcard from './Flashcard';
+import ChatBot from './ChatBot';
 
 type ModuleInfoProps = {
   title: string;
@@ -59,6 +60,7 @@ const ModuleInfo = ({ title, intro, image, content, img_position, quizQuestions,
                 </div>
               </div>
             )}
+            <ChatBot />
           </div>
         </div>
       </div>
