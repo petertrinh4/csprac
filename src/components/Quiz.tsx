@@ -19,6 +19,7 @@ const Quiz = ({ questions }: QuizProps) => {
   const quizRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
+  // Set quiz container dimensions
   useEffect(() => {
     if (quizRef.current) {
       setDimensions({
@@ -28,6 +29,7 @@ const Quiz = ({ questions }: QuizProps) => {
     }
   }, [quizRef.current, current]);
 
+  // Trigger confetti only if perfect score
   useEffect(() => {
     if (showScore && score === questions.length) {
       setShowConfetti(true);
@@ -46,10 +48,19 @@ const Quiz = ({ questions }: QuizProps) => {
     }
   };
 
+  const handleRestart = () => {
+    setCurrent(0);
+    setSelected('');
+    setScore(0);
+    setShowScore(false);
+    setShowConfetti(false);
+  };
+
   return (
     <div
       ref={quizRef}
-      className="flex flex-col justify-between space-y-6 relative bg-white p-8 rounded-xl shadow-lg w-full max-w-5xl mx-auto min-h-[500px]"
+      style={{ maxWidth: '120rem' }}
+      className="flex flex-col justify-between space-y-6 relative bg-gradient-to-br from-gray-200 to-gray-300 p-8 rounded-[2rem] shadow-2xl w-full mx-auto min-h-[500px]"
     >
       {showConfetti && (
         <Confetti
@@ -61,24 +72,34 @@ const Quiz = ({ questions }: QuizProps) => {
       )}
 
       {showScore ? (
-        <div className="text-center text-2xl font-bold">
-          You scored {score} / {questions.length}
-          {score === questions.length && (
-            <div className="mt-4 text-green-600 font-extrabold text-xl animate-bounce">
-              Perfect Score! 🎉
-            </div>
-          )}
+        <div className="flex flex-col items-center justify-center text-center text-2xl font-bold text-gray-800 h-full">
+          <div>
+            You scored {score} / {questions.length}
+            {score === questions.length && (
+              <div className="mt-4 text-gray-700 font-extrabold text-xl animate-bounce">
+                Perfect Score! 🎉
+              </div>
+            )}
+          </div>
+          <button
+            onClick={handleRestart}
+            className="mt-16 bg-[#bc9904] text-white p-4 rounded-full hover:bg-[#a67f03] w-1/2 transform transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]"
+          >
+            Restart Quiz
+          </button>
         </div>
       ) : (
         <>
-          <div className="font-semibold text-xl">{questions[current]?.question}</div>
-          <div className="flex flex-col space-y-3">
+          <div className="font-semibold text-2xl text-gray-800">{questions[current]?.question}</div>
+          <div className="flex flex-col space-y-4">
             {questions[current]?.options.map(option => (
               <button
                 key={option}
                 onClick={() => setSelected(option)}
-                className={`w-full p-3 rounded-lg border transition-colors duration-200 text-left ${
-                  selected === option ? 'bg-blue-500 text-white' : 'bg-gray-100 hover:bg-blue-100'
+                className={`w-full p-4 rounded-full border-2 transition-colors duration-300 text-left transform hover:scale-105 hover:translate-y-[-5px] ${
+                  selected === option
+                    ? 'bg-[#bc9904] text-white border-[#a67f03]'
+                    : 'bg-white text-gray-800 border-gray-300 hover:border-[#bc9904]'
                 }`}
               >
                 {option}
@@ -88,7 +109,7 @@ const Quiz = ({ questions }: QuizProps) => {
           <button
             onClick={handleNext}
             disabled={!selected}
-            className="mt-4 bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 disabled:opacity-50 w-full"
+            className="mt-4 bg-[#bc9904] text-white p-4 rounded-full hover:bg-[#a67f03] disabled:opacity-50 w-full transform transition-transform duration-300 hover:scale-105 hover:translate-y-[-5px]"
           >
             Next
           </button>
