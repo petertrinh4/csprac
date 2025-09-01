@@ -21,6 +21,13 @@ const extraResources = [
     url: 'https://feprep.net/problems',
     description: 'Collection of practice problems for FE exam preparation.',
   },
+  {
+    title: 'COP3502 Typed Notes',
+    image: '/COP3502Notes.webp', // Update the path to the image
+    url: '/COP3502_Typed_Notes_v0_9.pdf', // Relative path to the PDF in the public folder
+    description: 'Typed notes for COP3502 course.',
+    download: true, // Optional: Indicates it's downloadable
+  },
 ];
 
 const ExtraResources: React.FC = () => {
@@ -41,6 +48,7 @@ const ExtraResources: React.FC = () => {
                 rel="noopener noreferrer"
                 className="card w-96 shadow-sm hover:shadow-xl transition-shadow flex flex-col items-center"
                 style={{ background: '#F5F6F7', textDecoration: 'none' }}
+                {...(resource.download ? { download: '' } : {})} // Conditionally add the download attribute
               >
                 <figure className="px-10 pt-10">
                   <img

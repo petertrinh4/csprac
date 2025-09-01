@@ -5,12 +5,13 @@ type ModuleCardProps = {
   description: string;
   image: string;
   id: string;
+  className?: string; // Add className as an optional prop
 };
 
-const ModuleCard = ({ title, description, image, id }: ModuleCardProps) => {
+const ModuleCard = ({ title, description, image, id, className }: ModuleCardProps) => {
   return (
     <>
-      <div className="card w-96 shadow-sm" style={{ background: '#F5F6F7' }}>
+      <div className={`card w-96 shadow-sm ${className}`} style={{ background: '#F5F6F7' }}>
         <figure className="px-10 pt-10">
           <img src={image} alt={title} className="rounded-xl" />
         </figure>
@@ -20,8 +21,7 @@ const ModuleCard = ({ title, description, image, id }: ModuleCardProps) => {
           <div className="card-actions">
             <Link to={`/module/${id}`}>
               <button
-                className="btn text-white border-none"
-                style={{ background: '#bc9902', color: '#fff' }}
+                className="btn text-white border-none bg-yellow-500 transition-all duration-300 hover:bg-yellow-600 hover:ring-4 hover:ring-yellow-300"
               >
                 Learn more
               </button>
