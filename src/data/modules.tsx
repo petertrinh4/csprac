@@ -11,61 +11,11 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" title="Module Videos" />
-        <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" title="" />
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Memory_management"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Dynamic Memory Allocation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Dynamic Memory Allocation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/cprogramming/c_dynamic_memory_allocation.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Dynamic Memory Allocation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/c-programming/c-dynamic-memory-allocation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Dynamic Memory Allocation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/dynamic-memory-allocation-in-c"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Dynamic Memory Allocation
-              </a>
-            </li>
-          </ul>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" title="Module Videos" />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" title="" />
         </div>
       </>
     ),
@@ -113,14 +63,18 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/vgvR515ORaY"
-          title="Big O Notation and Algorithm Analysis"
-        />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/xGYsEqe9Vl0"
-          title="Best, Worst, and Average Case"
-        />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer
+            url="https://www.youtube.com/embed/vgvR515ORaY"
+            title="Big O Notation and Algorithm Analysis"
+          />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer
+            url="https://www.youtube.com/embed/xGYsEqe9Vl0"
+            title="Best, Worst, and Average Case"
+          />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -215,14 +169,18 @@ export const modules: Module[] = [
   },
   {
     id: 'rec',
-    title: 'Recursion & Recurrence Relations',
+    title: 'Recursion, Recurrence Relations',
     intro: '',
     image: '/hanoi.gif',
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" title="Recursion Explained" />
-        <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" title="Recurrence Relations" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" title="Recursion Explained" />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" title="Recurrence Relations" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -237,32 +195,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://en.wikipedia.org/wiki/Recurrence_relation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Recurrence Relations
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.geeksforgeeks.org/recursion/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 GFG: Recursion
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/recurrence-relation/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Recurrence Relations
               </a>
             </li>
             <li>
@@ -277,16 +215,6 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://www.tutorialspoint.com/recurrence_relation.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Recurrence Relations
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.programiz.com/c-programming/c-recursion"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -297,32 +225,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://www.programiz.com/dsa/recurrence-relation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Recurrence Relations
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.javatpoint.com/recursion-in-c"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 JavaTpoint: Recursion in C
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/recurrence-relation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Recurrence Relations
               </a>
             </li>
           </ul>
@@ -343,12 +251,7 @@ export const modules: Module[] = [
       },
       {
         question: 'What is the base case in recursion?',
-        options: [
-          'The recursive call',
-          'The stopping condition',
-          'The function definition',
-          'The loop',
-        ],
+        options: ['The recursive call', 'The stopping condition', 'The function definition', 'The loop'],
         answer: 'The stopping condition',
       },
       {
@@ -358,12 +261,7 @@ export const modules: Module[] = [
       },
       {
         question: 'Recurrence relations are used to:',
-        options: [
-          'Describe recursive algorithms',
-          'Sort arrays',
-          'Allocate memory',
-          'None of the above',
-        ],
+        options: ['Describe recursive algorithms', 'Sort arrays', 'Allocate memory', 'None of the above'],
         answer: 'Describe recursive algorithms',
       },
     ],
@@ -383,11 +281,9 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/N6dOwBde7-M"
-          title="Learn Linked Lists in 13 minutes (Bro Code)"
-        />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -402,52 +298,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://en.wikipedia.org/wiki/Doubly_linked_list"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Doubly Linked Lists
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Circular_linked_list"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Circular Linked Lists
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.geeksforgeeks.org/data-structures-linked-list/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 GFG: Linked List Data Structure
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/doubly-linked-list/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Doubly Linked List
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/circular-linked-list/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Circular Linked List
               </a>
             </li>
             <li>
@@ -488,12 +344,7 @@ export const modules: Module[] = [
     quizQuestions: [
       {
         question: 'What is a linked list?',
-        options: [
-          'A collection of arrays',
-          'A sequence of nodes',
-          'A type of tree',
-          'A sorting algorithm',
-        ],
+        options: ['A collection of arrays', 'A sequence of nodes', 'A type of tree', 'A sorting algorithm'],
         answer: 'A sequence of nodes',
       },
       {
@@ -527,14 +378,15 @@ export const modules: Module[] = [
   },
   {
     id: 'stacks',
-    title: 'Stacks & Queues',
+    title: 'Stacks, Queues',
     intro: '',
     image: '/queue.gif',
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
-        <VideoPlayer url="https://www.youtube.com/embed/okr-XE8yTO8" title="Queue Data Structure" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -549,32 +401,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Queues
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.geeksforgeeks.org/stack-data-structure/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 GFG: Stack Data Structure
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/queue-data-structure/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Queue Data Structure
               </a>
             </li>
             <li>
@@ -589,16 +421,6 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/queue_algorithm.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Queue Algorithm
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.programiz.com/dsa/stack"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -609,32 +431,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://www.programiz.com/dsa/queue"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Queue
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.javatpoint.com/data-structure-stack"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 JavaTpoint: Stack
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/data-structure-queue"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Queue
               </a>
             </li>
           </ul>
@@ -679,25 +481,18 @@ export const modules: Module[] = [
   },
   {
     id: 'trees',
-    title: 'BST, AVL Tree, Tries, Heaps',
+    title: 'Binary Search Trees, AVL Trees, Tries, Heaps',
     intro: '',
     image: '/bfs.gif',
     content: (
       <>
         <Background />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/Gt2yBZAhsGM"
-          title="Binary Search Trees (BST)"
-        />
-        <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" title="AVL Trees" />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/HqPJF2L5h9U"
-          title="Heap Data Structure | Introduction to Heaps"
-        />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/zIjfhVPRZCg"
-          title="Trie Data Structure Explained"
-        />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/Gt2yBZAhsGM" />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -712,72 +507,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://en.wikipedia.org/wiki/AVL_tree"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: AVL Trees
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Trie"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Tries
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Heap_(data_structure)"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Heaps
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 GFG: Binary Search Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/avl-tree-set-1-insertion/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: AVL Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/trie-insert-and-search/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Trie
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/heap-data-structure/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Heap
               </a>
             </li>
             <li>
@@ -792,72 +527,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/avl_tree_algorithm.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: AVL Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/trie_data_structure.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Trie
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/heap_data_structure.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Heap
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.programiz.com/dsa/binary-search-tree"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 Programiz: Binary Search Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/avl-tree"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: AVL Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/trie"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Trie
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/heap-data-structure"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Heap
               </a>
             </li>
             <li>
@@ -870,36 +545,6 @@ export const modules: Module[] = [
                 JavaTpoint: Binary Search Tree
               </a>
             </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/avl-tree"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: AVL Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/trie-data-structure"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Trie
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/heap-data-structure"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Heap
-              </a>
-            </li>
           </ul>
         </div>
       </>
@@ -908,12 +553,7 @@ export const modules: Module[] = [
     quizQuestions: [
       {
         question: 'What is a binary search tree?',
-        options: [
-          'A tree with two children',
-          'A sorted tree',
-          'A tree where left < root < right',
-          'A heap',
-        ],
+        options: ['A tree with two children', 'A sorted tree', 'A tree where left < root < right', 'A heap'],
         answer: 'A tree where left < root < right',
       },
       {
@@ -953,8 +593,9 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
-        <VideoPlayer url="https://www.youtube.com/embed/ZZuD6iUe3Pc" title="Merge Sort Explained" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -1049,17 +690,15 @@ export const modules: Module[] = [
   },
   {
     id: 'hash',
-    title: 'Hash Tables',
+    title: 'HashTables',
     intro: '',
     image: '/hashtable.gif',
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
-        <VideoPlayer
-          url="https://www.youtube.com/embed/shs0KM3wKv8"
-          title="Hash Tables and Hash Functions Explained"
-        />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -1125,12 +764,7 @@ export const modules: Module[] = [
       },
       {
         question: 'What is a hash function?',
-        options: [
-          'A function that sorts',
-          'A function that maps keys to indices',
-          'A function that searches',
-          'A function that deletes',
-        ],
+        options: ['A function that sorts', 'A function that maps keys to indices', 'A function that searches', 'A function that deletes'],
         answer: 'A function that maps keys to indices',
       },
       {
@@ -1165,8 +799,12 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
-        <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
+        </div>
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
@@ -1181,52 +819,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://en.wikipedia.org/wiki/Bitmask"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Bitmasking
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Binary_number"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Binary Numbers
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 GFG: Bitwise Operators in C/C++
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/bitmasking-technique/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Bitmasking Technique
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/binary-representation-of-a-number/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Binary Representation
               </a>
             </li>
             <li>
@@ -1241,16 +839,6 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://www.tutorialspoint.com/binary_numbers.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Binary Numbers
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.programiz.com/c-programming/c-bitwise-operators"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1261,32 +849,12 @@ export const modules: Module[] = [
             </li>
             <li>
               <a
-                href="https://www.programiz.com/c-programming/binary-number-system"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Binary Number System
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.javatpoint.com/bitwise-operators-in-c"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="wiki-link"
               >
                 JavaTpoint: Bitwise Operators in C
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/binary-number-system"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Binary Number System
               </a>
             </li>
           </ul>
@@ -1337,7 +905,9 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
+        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+          <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
+        </div>
         <div className="wiki-links-list">
           <ul>
             <li>
