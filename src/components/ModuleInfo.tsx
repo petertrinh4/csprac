@@ -4,6 +4,7 @@ import QuizCard from './QuizCard';
 import Quiz from '../components/Quiz';
 import Flashcard from './Flashcard';
 import ChatBot from './ChatBot';
+import UsefulLinks from './UsefulLinks';
 
 type ModuleInfoProps = {
   title: string;
@@ -22,12 +23,19 @@ type ModuleInfoProps = {
   }[] | undefined;
 };
 
-const ModuleInfo = ({ title, intro, image, content, img_position, quizQuestions, flashcards }: ModuleInfoProps) => {
+const defaultFlashcards = [
+  { front: 'What is React?', back: 'A JavaScript library for building user interfaces.' },
+  { front: 'What is JSX?', back: 'A syntax extension for JavaScript that looks similar to XML or HTML.' },
+  { front: 'What is a component?', back: 'A reusable piece of UI in a React application.' },
+  { front: 'What is state in React?', back: 'A way to manage dynamic data in a component.' },
+];
+
+const ModuleInfo = ({ title, intro, image, content, img_position, quizQuestions, flashcards = defaultFlashcards }: ModuleInfoProps) => {
   return (
     <div>
       <NavBar />
       <div className="with-navbar module-info-container max-w-7xl mx-auto px-4">
-        <h1 className="module-title text-center relative card bg-[#f5f6f7] shadow-none border border-gray-200 max-w-2xl w-full mx-auto p-4 overflow-hidden">
+        <h1 className="module-title text-center relative card bg-gradient-to-r from-[#ffe680] to-[#ffe680] shadow-none border border-gray-200 max-w-2xl w-full mx-auto p-4 overflow-hidden">
           <span className="absolute inset-0 bg-gray-100 rounded-full -z-10"></span>
           {title}
         </h1>
@@ -48,14 +56,14 @@ const ModuleInfo = ({ title, intro, image, content, img_position, quizQuestions,
           <div className="flex-1 min-w-0 flex flex-col gap-4">
             {quizQuestions && quizQuestions.length > 0 && (
               <div className="card bg-base-100 shadow-none max-w-md w-full mx-auto">
-                <div className="card-body p-4">
+                <div className="card-body p-4" style={{ backgroundColor: '#ffe680', borderRadius: '12px' }}>
                   <Quiz questions={quizQuestions} />
                 </div>
               </div>
             )}
             {flashcards && flashcards.length > 0 && (
               <div className="card bg-base-100 shadow-none max-w-2xl w-full mx-auto">
-                <div className="card-body p-4">
+                <div className="card-body p-4" style={{ backgroundColor: '#ffffff', borderRadius: '12px' }}>
                   <Flashcard flashcards={flashcards} />
                 </div>
               </div>

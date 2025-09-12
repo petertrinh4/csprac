@@ -21,7 +21,7 @@ const ModuleCard = ({ title, description, image, id, className }: ModuleCardProp
           <div className="card-actions">
             <Link to={`/module/${id}`}>
               <button
-                className="btn text-white border-none bg-yellow-500 transition-all duration-300 hover:bg-yellow-600 hover:ring-4 hover:ring-yellow-300"
+                className="btn text-white border-none bg-[#bc9904] transition-all duration-300 hover:bg-[#d4b106] hover:ring-4 hover:ring-yellow-300"
               >
                 Learn more
               </button>

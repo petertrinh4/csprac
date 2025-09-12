@@ -7,8 +7,11 @@ type VideoPlayerProps = {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ url, title }) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-none border border-gray-200">
-      <div className="card-body p-4">
+    <div className="card bg-[#ffe680] w-96 shadow-none border border-gray-200">
+      <div
+        className="card-body p-4"
+        style={{ backgroundColor: '#ffe680' }}
+      >
         {title && <h2 className="card-title text-base mb-2">{title}</h2>}
         <div
           className="relative rounded-2xl shadow-lg"
