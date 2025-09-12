@@ -59,8 +59,8 @@ const Quiz = ({ questions }: QuizProps) => {
   return (
     <div
       ref={quizRef}
-      style={{ maxWidth: '120rem' }}
-      className="flex flex-col justify-between space-y-6 relative bg-gradient-to-br from-gray-200 to-gray-300 p-8 rounded-[2rem] shadow-2xl w-full mx-auto min-h-[500px]"
+      style={{ maxWidth: '120rem', fontFamily: 'Arial Black, sans-serif' }}
+      className="flex flex-col justify-between space-y-6 relative bg-gradient-to-br from-[#fff9cc] to-[#ffe680] p-8 rounded-[2rem] shadow-2xl w-full mx-auto min-h-[500px]"
     >
       {showConfetti && (
         <Confetti

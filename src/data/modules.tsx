@@ -1,6 +1,7 @@
 import type { Module } from './moduleTypes';
 import VideoPlayer from '../components/VideoPlayer';
 import Background from '../components/Background';
+import UsefulLinks from '../components/UsefulLinks';
 
 export const modules: Module[] = [
   {
@@ -17,6 +18,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" title="" />
         </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Dynamic_memory_allocation', text: 'Wikipedia: Dynamic Memory Allocation' },
+            { href: 'https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/', text: 'GFG: Dynamic Memory Allocation' },
+            { href: 'https://www.tutorialspoint.com/cprogramming/c_dynamic_memory_allocation.htm', text: 'TutorialsPoint: Dynamic Memory Allocation' },
+            { href: 'https://www.programiz.com/c-programming/c-dynamic-memory-allocation', text: 'Programiz: Dynamic Memory Allocation' },
+            { href: 'https://www.javatpoint.com/dynamic-memory-allocation', text: 'JavaTpoint: Dynamic Memory Allocation' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-right',
@@ -46,6 +56,16 @@ export const modules: Module[] = [
         options: ['runtime', 'compile time', 'link time', 'preprocessor time'],
         answer: 'runtime',
       },
+      {
+        question: 'What is the difference between malloc and calloc?',
+        options: ['calloc initializes memory to zero', 'malloc is faster', 'calloc is faster', 'malloc initializes memory to zero'],
+        answer: 'calloc initializes memory to zero',
+      },
+      {
+        question: 'What happens if you free memory twice?',
+        options: ['Undefined behavior', 'Memory is freed again', 'No effect', 'Program runs faster'],
+        answer: 'Undefined behavior',
+      },
     ],
     flashcards: [
       { front: 'malloc', back: 'Allocates memory dynamically in C.' },
@@ -53,6 +73,10 @@ export const modules: Module[] = [
       { front: 'calloc', back: 'Allocates and initializes memory to zero.' },
       { front: 'realloc', back: 'Changes the size of previously allocated memory.' },
       { front: 'Dynamic Allocation', back: 'Occurs at runtime.' },
+      { front: 'realloc', back: 'Resizes previously allocated memory.' },
+      { front: 'calloc vs malloc', back: 'calloc initializes memory to zero, malloc does not.' },
+      { front: 'Double Free', back: 'Undefined behavior caused by freeing memory twice.' },
+      { front: 'Memory Leak', back: 'Occurs when dynamically allocated memory is not freed.' },
     ],
   },
   {
@@ -75,60 +99,15 @@ export const modules: Module[] = [
             title="Best, Worst, and Average Case"
           />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Analysis_of_algorithms"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Analysis of Algorithms
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Asymptotic Analysis
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/algorithm_analysis.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Algorithm Analysis
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/algorithm-analysis"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Algorithm Analysis
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/analysis-of-algorithms"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Analysis of Algorithms
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Analysis_of_algorithms', text: 'Wikipedia: Analysis of Algorithms' },
+            { href: 'https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/', text: 'GFG: Asymptotic Analysis' },
+            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/algorithm_analysis.htm', text: 'TutorialsPoint: Algorithm Analysis' },
+            { href: 'https://www.programiz.com/dsa/algorithm-analysis', text: 'Programiz: Algorithm Analysis' },
+            { href: 'https://www.javatpoint.com/analysis-of-algorithms', text: 'JavaTpoint: Analysis of Algorithms' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-left',
@@ -158,6 +137,16 @@ export const modules: Module[] = [
         options: ['Omega (Ω)', 'Theta (Θ)', 'Big O (O)', 'All of the above'],
         answer: 'Big O (O)',
       },
+      {
+        question: 'What is the time complexity of linear search?',
+        options: ['O(n)', 'O(log n)', 'O(1)', 'O(n^2)'],
+        answer: 'O(n)',
+      },
+      {
+        question: 'What does Omega (Ω) notation represent?',
+        options: ['Best case', 'Worst case', 'Average case', 'All cases'],
+        answer: 'Best case',
+      },
     ],
     flashcards: [
       { front: 'Big O', back: 'Describes the upper bound of an algorithm.' },
@@ -165,6 +154,10 @@ export const modules: Module[] = [
       { front: 'O(n log n)', back: 'Efficient for large datasets.' },
       { front: 'Worst Case', back: 'Big O notation describes this.' },
       { front: 'Theta', back: 'Describes tight bound.' },
+      { front: 'Best Case', back: 'Describes the best possible scenario for an algorithm.' },
+      { front: 'Average Case', back: 'Describes the expected scenario for an algorithm.' },
+      { front: 'Linear Search', back: 'Searches each element one by one.' },
+      { front: 'Omega (Ω)', back: 'Represents the best case complexity.' },
     ],
   },
   {
@@ -181,60 +174,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" title="Recurrence Relations" />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Recursion_(computer_science)"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Recursion (Computer Science)
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/recursion/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Recursion
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/recursion.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Recursion
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/c-programming/c-recursion"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Recursion
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/recursion-in-c"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Recursion in C
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Recursion_(computer_science)', text: 'Wikipedia: Recursion (Computer Science)' },
+            { href: 'https://www.geeksforgeeks.org/recursion/', text: 'GFG: Recursion' },
+            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/recursion.htm', text: 'TutorialsPoint: Recursion' },
+            { href: 'https://www.programiz.com/c-programming/c-recursion', text: 'Programiz: Recursion' },
+            { href: 'https://www.javatpoint.com/recursion-in-c', text: 'JavaTpoint: Recursion in C' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-center',
@@ -264,6 +212,16 @@ export const modules: Module[] = [
         options: ['Describe recursive algorithms', 'Sort arrays', 'Allocate memory', 'None of the above'],
         answer: 'Describe recursive algorithms',
       },
+      {
+        question: 'What is tail recursion?',
+        options: ['Recursion where the recursive call is the last operation', 'Recursion with no base case', 'Recursion with multiple calls', 'Recursion with loops'],
+        answer: 'Recursion where the recursive call is the last operation',
+      },
+      {
+        question: 'What is the time complexity of the Tower of Hanoi problem?',
+        options: ['O(2^n)', 'O(n)', 'O(n^2)', 'O(log n)'],
+        answer: 'O(2^n)',
+      },
     ],
     flashcards: [
       { front: 'Recursion', back: 'A function calling itself.' },
@@ -271,6 +229,10 @@ export const modules: Module[] = [
       { front: 'Recurrence Relation', back: 'Describes recursive algorithms.' },
       { front: 'Factorial', back: 'Common recursive problem.' },
       { front: 'Tower of Hanoi', back: 'Solved using recursion.' },
+      { front: 'Recursive Function', back: 'A function that calls itself.' },
+      { front: 'Tower of Hanoi', back: 'Classic problem solved using recursion.' },
+      { front: 'Tail Recursion', back: 'Recursive call is the last operation in the function.' },
+      { front: 'Tower of Hanoi', back: 'A classic recursive problem with O(2^n) complexity.' },
     ],
   },
   {
@@ -284,60 +246,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Linked_list"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Linked Lists
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/data-structures-linked-list/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Linked List Data Structure
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Linked List Algorithms
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/linked-list"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Linked List
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/data-structure-linked-list"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Linked List
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Linked_list', text: 'Wikipedia: Linked Lists' },
+            { href: 'https://www.geeksforgeeks.org/data-structures-linked-list/', text: 'GFG: Linked List Data Structure' },
+            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm', text: 'TutorialsPoint: Linked List Algorithms' },
+            { href: 'https://www.programiz.com/dsa/linked-list', text: 'Programiz: Linked List' },
+            { href: 'https://www.javatpoint.com/data-structure-linked-list', text: 'JavaTpoint: Linked List' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-left',
@@ -367,6 +284,16 @@ export const modules: Module[] = [
         options: ['O(1)', 'O(n)', 'O(log n)', 'O(n^2)'],
         answer: 'O(n)',
       },
+      {
+        question: 'What is the advantage of a circular linked list?',
+        options: ['Efficient traversal', 'Easier to implement', 'Uses less memory', 'No advantage'],
+        answer: 'Efficient traversal',
+      },
+      {
+        question: 'What is the time complexity of inserting at the head of a singly linked list?',
+        options: ['O(1)', 'O(n)', 'O(log n)', 'O(n^2)'],
+        answer: 'O(1)',
+      },
     ],
     flashcards: [
       { front: 'Linked List', back: 'A sequence of nodes.' },
@@ -374,6 +301,10 @@ export const modules: Module[] = [
       { front: 'Singly Linked List', back: 'Nodes point to next node only.' },
       { front: 'Doubly Linked List', back: 'Nodes point to next and previous nodes.' },
       { front: 'Null', back: 'Last node points to null.' },
+      { front: 'Circular Linked List', back: 'Last node points to the first node.' },
+      { front: 'Traversal', back: 'Process of visiting all nodes in a linked list.' },
+      { front: 'Circular Linked List', back: 'Last node points to the first node.' },
+      { front: 'Insertion at Head', back: 'Takes O(1) time in a singly linked list.' },
     ],
   },
   {
@@ -387,60 +318,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Stacks
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/stack-data-structure/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Stack Data Structure
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Stack Algorithm
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/stack"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Stack
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/data-structure-stack"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Stack
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Stack_(abstract_data_type)', text: 'Wikipedia: Stacks' },
+            { href: 'https://www.geeksforgeeks.org/stack-data-structure/', text: 'GFG: Stack Data Structure' },
+            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm', text: 'TutorialsPoint: Stack Algorithm' },
+            { href: 'https://www.programiz.com/dsa/stack', text: 'Programiz: Stack' },
+            { href: 'https://www.javatpoint.com/data-structure-stack', text: 'JavaTpoint: Stack' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-left',
@@ -470,6 +356,16 @@ export const modules: Module[] = [
         options: ['Enqueue', 'Dequeue', 'Peek', 'Push'],
         answer: 'Peek',
       },
+      {
+        question: 'What is the main principle of a queue?',
+        options: ['FIFO', 'LIFO', 'LILO', 'FILO'],
+        answer: 'FIFO',
+      },
+      {
+        question: 'What is the time complexity of enqueue and dequeue in a queue?',
+        options: ['O(1)', 'O(n)', 'O(log n)', 'O(n^2)'],
+        answer: 'O(1)',
+      },
     ],
     flashcards: [
       { front: 'Stack', back: 'LIFO data structure.' },
@@ -477,6 +373,10 @@ export const modules: Module[] = [
       { front: 'Push', back: 'Adds element to stack.' },
       { front: 'Pop', back: 'Removes element from stack.' },
       { front: 'Enqueue', back: 'Adds element to queue.' },
+      { front: 'Peek', back: 'Returns the top element without removing it.' },
+      { front: 'FIFO', back: 'First In, First Out principle used in queues.' },
+      { front: 'FIFO', back: 'First In, First Out principle used in queues.' },
+      { front: 'Dequeue', back: 'Removes element from the front of the queue.' },
     ],
   },
   {
@@ -493,60 +393,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Binary_search_tree"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Binary Search Trees
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/binary-search-tree-data-structure/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Binary Search Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Binary Search Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/binary-search-tree"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Binary Search Tree
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/binary-search-tree"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Binary Search Tree
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Binary_search_tree', text: 'Wikipedia: Binary Search Trees' },
+            { href: 'https://www.geeksforgeeks.org/binary-search-tree-data-structure/', text: 'GFG: Binary Search Tree' },
+            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm', text: 'TutorialsPoint: Binary Search Tree' },
+            { href: 'https://www.programiz.com/dsa/binary-search-tree', text: 'Programiz: Binary Search Tree' },
+            { href: 'https://www.javatpoint.com/binary-search-tree', text: 'JavaTpoint: Binary Search Tree' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-center',
@@ -576,6 +431,16 @@ export const modules: Module[] = [
         options: ['Parent < Child', 'Parent > Child', 'Parent = Child', 'No relation'],
         answer: 'Parent < Child',
       },
+      {
+        question: 'What is the height of a tree with a single node?',
+        options: ['0', '1', '2', 'Undefined'],
+        answer: '0',
+      },
+      {
+        question: 'What is the time complexity of inserting into a max heap?',
+        options: ['O(log n)', 'O(n)', 'O(1)', 'O(n^2)'],
+        answer: 'O(log n)',
+      },
     ],
     flashcards: [
       { front: 'BST', back: 'Binary Search Tree.' },
@@ -583,6 +448,10 @@ export const modules: Module[] = [
       { front: 'Trie', back: 'Used for prefix matching.' },
       { front: 'Heap', back: 'Complete binary tree.' },
       { front: 'O(log n)', back: 'Search time in balanced BST.' },
+      { front: 'Complete Binary Tree', back: 'All levels are fully filled except possibly the last.' },
+      { front: 'Heap Property', back: 'Defines the relationship between parent and child nodes.' },
+      { front: 'Height of Tree', back: 'The number of edges on the longest path from root to a leaf.' },
+      { front: 'Max Heap', back: 'A complete binary tree where parent nodes are greater than child nodes.' },
     ],
   },
   {
@@ -596,60 +465,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Sorting_algorithm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Sorting Algorithm
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/sorting-algorithms/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Sorting Algorithms
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Sorting Algorithms
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/sorting-algorithm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Sorting Algorithm
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/sorting-algorithms"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Sorting Algorithms
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Sorting_algorithm', text: 'Wikipedia: Sorting Algorithm' },
+            { href: 'https://www.geeksforgeeks.org/sorting-algorithms/', text: 'GFG: Sorting Algorithms' },
+            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm', text: 'TutorialsPoint: Sorting Algorithms' },
+            { href: 'https://www.programiz.com/dsa/sorting-algorithm', text: 'Programiz: Sorting Algorithm' },
+            { href: 'https://www.javatpoint.com/sorting-algorithms', text: 'JavaTpoint: Sorting Algorithms' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-right',
@@ -679,6 +503,16 @@ export const modules: Module[] = [
         options: ['Merge Sort', 'Quick Sort', 'Bubble Sort', 'Heap Sort'],
         answer: 'Bubble Sort',
       },
+      {
+        question: 'Which sorting algorithm is in-place?',
+        options: ['Merge Sort', 'Quick Sort', 'Radix Sort', 'Counting Sort'],
+        answer: 'Quick Sort',
+      },
+      {
+        question: 'What is the best-case time complexity of bubble sort?',
+        options: ['O(n)', 'O(n log n)', 'O(n^2)', 'O(1)'],
+        answer: 'O(n)',
+      },
     ],
     flashcards: [
       { front: 'Bubble Sort', back: 'Stable sorting algorithm.' },
@@ -686,6 +520,10 @@ export const modules: Module[] = [
       { front: 'Radix Sort', back: 'Not comparison-based.' },
       { front: 'Insertion Sort', back: 'Best for nearly sorted data.' },
       { front: 'Selection Sort', back: 'Simple but inefficient.' },
+      { front: 'Quick Sort', back: 'Divide-and-conquer algorithm with average O(n log n) complexity.' },
+      { front: 'Heap Sort', back: 'Comparison-based sorting algorithm using a binary heap.' },
+      { front: 'In-place Sorting', back: 'Sorting algorithm that requires no extra space.' },
+      { front: 'Bubble Sort Best Case', back: 'O(n) when the array is already sorted.' },
     ],
   },
   {
@@ -699,60 +537,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Hash_table"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Hash Table
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/hashing-data-structure/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Hashing Data Structure
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Hash Data Structure
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/dsa/hash-table"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Hash Table
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/data-structure-hash-table"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Hash Table
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Hash_table', text: 'Wikipedia: Hash Table' },
+            { href: 'https://www.geeksforgeeks.org/hashing-data-structure/', text: 'GFG: Hashing Data Structure' },
+            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm', text: 'TutorialsPoint: Hash Data Structure' },
+            { href: 'https://www.programiz.com/dsa/hash-table', text: 'Programiz: Hash Table' },
+            { href: 'https://www.javatpoint.com/data-structure-hash-table', text: 'JavaTpoint: Hash Table' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-left',
@@ -782,6 +575,16 @@ export const modules: Module[] = [
         options: ['O(1)', 'O(n)', 'O(log n)', 'O(n^2)'],
         answer: 'O(1)',
       },
+      {
+        question: 'What is the load factor in a hash table?',
+        options: ['Ratio of elements to table size', 'Number of collisions', 'Hash function efficiency', 'Table size'],
+        answer: 'Ratio of elements to table size',
+      },
+      {
+        question: 'What is open addressing?',
+        options: ['Collision resolution without chaining', 'Hash function optimization', 'Dynamic resizing', 'Key-value mapping'],
+        answer: 'Collision resolution without chaining',
+      },
     ],
     flashcards: [
       { front: 'Hash Table', back: 'Maps keys to values.' },
@@ -789,6 +592,10 @@ export const modules: Module[] = [
       { front: 'Collision', back: 'Two keys map to same index.' },
       { front: 'Chaining', back: 'Method to resolve collisions.' },
       { front: 'O(1)', back: 'Average search time.' },
+      { front: 'Load Factor', back: 'Ratio of number of elements to the table size.' },
+      { front: 'Open Addressing', back: 'Collision resolution method without chaining.' },
+      { front: 'Load Factor', back: 'Ratio of number of elements to the table size.' },
+      { front: 'Open Addressing', back: 'Collision resolution method without chaining.' },
     ],
   },
   {
@@ -805,60 +612,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Bitwise_operation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Bitwise Operation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Bitwise Operators in C/C++
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/bitwise-operators-in-c"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Bitwise Operators in C
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/c-programming/c-bitwise-operators"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Bitwise Operators
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/bitwise-operators-in-c"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Bitwise Operators in C
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Bitwise_operation', text: 'Wikipedia: Bitwise Operation' },
+            { href: 'https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/', text: 'GFG: Bitwise Operators in C/C++' },
+            { href: 'https://www.tutorialspoint.com/bitwise-operators-in-c', text: 'TutorialsPoint: Bitwise Operators in C' },
+            { href: 'https://www.programiz.com/c-programming/c-bitwise-operators', text: 'Programiz: Bitwise Operators' },
+            { href: 'https://www.javatpoint.com/bitwise-operators-in-c', text: 'JavaTpoint: Bitwise Operators in C' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-center',
@@ -888,6 +650,16 @@ export const modules: Module[] = [
         options: ['2', '8', '10', '16'],
         answer: '2',
       },
+      {
+        question: 'What does the | operator do?',
+        options: ['OR', 'AND', 'XOR', 'NOT'],
+        answer: 'OR',
+      },
+      {
+        question: 'What is the result of 5 & 3?',
+        options: ['1', '2', '3', '5'],
+        answer: '1',
+      },
     ],
     flashcards: [
       { front: 'AND (&)', back: 'Bitwise AND operator.' },
@@ -895,6 +667,10 @@ export const modules: Module[] = [
       { front: 'XOR (^)', back: 'Bitwise XOR operator.' },
       { front: '<<', back: 'Left shift operator.' },
       { front: 'Bitmasking', back: 'Setting/clearing bits.' },
+      { front: 'NOT (~)', back: 'Bitwise NOT operator.' },
+      { front: 'Right Shift (>>)', back: 'Shifts bits to the right.' },
+      { front: 'OR (|)', back: 'Bitwise OR operator.' },
+      { front: 'AND (&)', back: 'Bitwise AND operator.' },
     ],
   },
   {
@@ -908,60 +684,15 @@ export const modules: Module[] = [
         <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
           <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
         </div>
-        <div className="wiki-links-list">
-          <ul>
-            <li>
-              <a
-                href="https://en.wikipedia.org/wiki/Summation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Wikipedia: Summation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.geeksforgeeks.org/summation-in-mathematics/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                GFG: Summation in Mathematics
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tutorialspoint.com/summation-in-mathematics"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                TutorialsPoint: Summation in Mathematics
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.programiz.com/math/summation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                Programiz: Summation
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.javatpoint.com/summation-in-mathematics"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wiki-link"
-              >
-                JavaTpoint: Summation in Mathematics
-              </a>
-            </li>
-          </ul>
-        </div>
+        <UsefulLinks
+          links={[
+            { href: 'https://en.wikipedia.org/wiki/Summation', text: 'Wikipedia: Summation' },
+            { href: 'https://www.geeksforgeeks.org/summation-in-mathematics/', text: 'GFG: Summation in Mathematics' },
+            { href: 'https://www.tutorialspoint.com/summation-in-mathematics', text: 'TutorialsPoint: Summation in Mathematics' },
+            { href: 'https://www.programiz.com/math/summation', text: 'Programiz: Summation' },
+            { href: 'https://www.javatpoint.com/summation-in-mathematics', text: 'JavaTpoint: Summation in Mathematics' },
+          ]}
+        />
       </>
     ),
     img_position: 'module-right',
@@ -991,6 +722,16 @@ export const modules: Module[] = [
         options: ['Finite sum', 'Infinite series', 'Product', 'None'],
         answer: 'Infinite series',
       },
+      {
+        question: 'What is the sum of the first n odd numbers?',
+        options: ['n^2', 'n(n+1)', 'n(n+1)/2', '2n'],
+        answer: 'n^2',
+      },
+      {
+        question: 'What is the sum of an arithmetic series?',
+        options: ['n/2 * (a + l)', 'n * a', 'a/(1-r)', 'n^2'],
+        answer: 'n/2 * (a + l)',
+      },
     ],
     flashcards: [
       { front: 'Summation (∑)', back: 'Sum of terms.' },
@@ -998,6 +739,10 @@ export const modules: Module[] = [
       { front: 'Geometric Series', back: 'Sum: a/(1-r).' },
       { front: 'Infinite Series', back: 'Sum with infinite terms.' },
       { front: 'Finite Sum', back: 'Sum with finite terms.' },
+      { front: 'Arithmetic Series', back: 'Sum of terms with a constant difference.' },
+      { front: 'Sigma Notation', back: 'Compact way to represent summation.' },
+      { front: 'Sum of Odd Numbers', back: 'The sum of the first n odd numbers is n^2.' },
+      { front: 'Arithmetic Series', back: 'Sum: n/2 * (a + l).' },
     ],
   },
 ];

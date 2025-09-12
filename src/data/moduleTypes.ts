@@ -16,4 +16,5 @@ export type Module = {
     front: string;
     back: string;
   }[];
+  links?: { title: string; url: string }[];
 };
