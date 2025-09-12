@@ -5,7 +5,7 @@ type ModuleCardProps = {
   description: string;
   image: string;
   id: string;
-  className?: string; // Add className as an optional prop
+  className?: string; 
 };
 
 const ModuleCard = ({ title, description, image, id, className }: ModuleCardProps) => {

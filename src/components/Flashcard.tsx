@@ -8,11 +8,11 @@ export type FlashcardType = {
 const Flashcard = ({
   flashcards,
   additionalFlashcards = [],
-  loadMoreFlashcards, // New prop for loading more flashcards
+  loadMoreFlashcards, 
 }: {
   flashcards: FlashcardType[];
   additionalFlashcards?: FlashcardType[];
-  loadMoreFlashcards?: () => FlashcardType[]; // Function to load more flashcards
+  loadMoreFlashcards?: () => FlashcardType[]; 
 }) => {
   const [current, setCurrent] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -29,7 +29,6 @@ const Flashcard = ({
 
   const handleNext = () => {
     if (current === allFlashcards.length - 1 && loadMoreFlashcards) {
-      // Load more flashcards when reaching the end
       const newFlashcards = loadMoreFlashcards();
       setAllFlashcards(prev => [...prev, ...newFlashcards]);
     }
@@ -62,21 +61,21 @@ const Flashcard = ({
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: 'inherit',
-            transformStyle: 'preserve-3d', // Enable 3D transformation
-            transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)', // Rotate on Y-axis
-            transition: 'transform 0.6s ease', // Smooth flip animation
+            transformStyle: 'preserve-3d', 
+            transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)', 
+            transition: 'transform 0.6s ease', 
           }}
         >
           <div
             style={{
-              backfaceVisibility: 'hidden', // Hide the back side when not flipped
+              backfaceVisibility: 'hidden', 
               position: 'absolute',
               width: '100%',
               height: '100%',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              background: 'linear-gradient(135deg, #fff8b0, #ffe680)', // Front side gradient updated to yellow tones
+              background: 'linear-gradient(135deg, #fff8b0, #ffe680)', 
               borderRadius: 'inherit',
             }}
           >
@@ -84,17 +83,17 @@ const Flashcard = ({
           </div>
           <div
             style={{
-              backfaceVisibility: 'hidden', // Hide the front side when flipped
+              backfaceVisibility: 'hidden', 
               position: 'absolute',
               width: '100%',
               height: '100%',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              background: 'linear-gradient(135deg, #fff4a3, #ffdb66)', // Back side gradient updated to yellow tones
+              background: 'linear-gradient(135deg, #fff4a3, #ffdb66)', 
               borderRadius: 'inherit',
-              transform: 'rotateY(180deg)', // Rotate back side to align with flip
-              textAlign: 'center', // Center the text
+              transform: 'rotateY(180deg)', 
+              textAlign: 'center', 
             }}
           >
             <p className="card-title text-xl font-bold text-gray-800">{card.back}</p>
@@ -105,9 +104,9 @@ const Flashcard = ({
         <button
           className="btn btn-md btn-outline rounded-full"
           style={{
-            backgroundColor: '#bc9904', // Updated background color
-            borderColor: '#bc9904', // Updated border color to match background
-            color: '#ffffff', // Updated text color to white for contrast
+            backgroundColor: '#bc9904', 
+            borderColor: '#bc9904', 
+            color: '#ffffff', 
             fontFamily: 'Arial Black, sans-serif',
             opacity: current === 0 ? 0.5 : 1,
             cursor: current === 0 ? 'not-allowed' : 'pointer',
@@ -130,16 +129,16 @@ const Flashcard = ({
         </button>
         <span
           className="text-md text-gray-700 font-medium"
-          style={{ fontFamily: 'Arial Black, sans-serif' }} // Updated font to Arial Black
+          style={{ fontFamily: 'Arial Black, sans-serif' }} 
         >
           {current + 1} / {allFlashcards.length}
         </span>
         <button
           className="btn btn-md btn-outline rounded-full"
           style={{
-            backgroundColor: '#bc9904', // Updated background color
-            borderColor: '#bc9904', // Updated border color to match background
-            color: '#ffffff', // Updated text color to white for contrast
+            backgroundColor: '#bc9904', 
+            borderColor: '#bc9904', 
+            color: '#ffffff', 
             fontFamily: 'Arial Black, sans-serif',
             opacity: current === allFlashcards.length - 1 && !loadMoreFlashcards ? 0.5 : 1,
             cursor: current === allFlashcards.length - 1 && !loadMoreFlashcards ? 'not-allowed' : 'pointer',

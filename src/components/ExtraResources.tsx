@@ -23,10 +23,10 @@ const extraResources = [
   },
   {
     title: 'COP3502 Typed Notes',
-    image: '/COP3502Notes.webp', // Update the path to the image
-    url: '/COP3502_Typed_Notes_v0_9.pdf', // Relative path to the PDF in the public folder
+    image: '/COP3502Notes.webp', 
+    url: '/COP3502_Typed_Notes_v0_9.pdf', 
     description: 'Typed notes for COP3502 course.',
-    download: true, // Optional: Indicates it's downloadable
+    download: true, 
   },
 ];
 
@@ -48,7 +48,7 @@ const ExtraResources: React.FC = () => {
                 rel="noopener noreferrer"
                 className="card w-96 shadow-sm hover:shadow-xl transition-shadow flex flex-col items-center"
                 style={{ background: '#F5F6F7', textDecoration: 'none' }}
-                {...(resource.download ? { download: '' } : {})} // Conditionally add the download attribute
+                {...(resource.download ? { download: '' } : {})} 
               >
                 <figure className="px-10 pt-10">
                   <img
