@@ -15,9 +15,9 @@ const AuthCallback = () => {
         .then(res => res.json())
         .then(async data => {
           if (data.success && data.user) {
-            // Store user info in Supabase
+            
             await signInWithGitHubProfile(data.user);
-            // Store user info in localStorage for NavBar
+            
             localStorage.setItem('githubUser', JSON.stringify(data.user));
             window.location.href = '/';
           } else {

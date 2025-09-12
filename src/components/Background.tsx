@@ -14,13 +14,13 @@ const Background = () => {
     canvas.width = width;
     canvas.height = height;
 
-    // BFS Visualization
-    const cols = Math.floor(width / 20); // More columns for better side coverage
+    
+    const cols = Math.floor(width / 20); 
     const rows = Math.floor(height / 20);
     const nodeRadius = 7;
-    const hSpacing = width / (cols + 0.2); // Reduce spacing to fill sides
+    const hSpacing = width / (cols + 0.2); 
     const vSpacing = height / (rows + 0.2);
-    // Node type
+    
     type Node = {
       x: number;
       y: number;
@@ -46,7 +46,7 @@ const Background = () => {
         });
       }
     }
-    // Pathfinding setup
+    
     const startIdx = 0;
     const endIdx = nodes.length - 1;
     if (nodes[startIdx]) {
@@ -116,7 +116,7 @@ const Background = () => {
     function draw() {
       if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
-      // Draw edges
+      
       nodes.forEach((node, idx) => {
         neighbors(idx).forEach(nIdx => {
           const neighborNode = nodes[nIdx];
@@ -129,20 +129,20 @@ const Background = () => {
           ctx.stroke();
         });
       });
-      // Draw nodes
+      
       nodes.forEach((node, idx) => {
         ctx.beginPath();
         ctx.arc(node.x, node.y, nodeRadius, 0, 2 * Math.PI);
-        // Gradient: top row is thickest color, bottom is lightest
+        
         const rowIdx = Math.floor(idx / cols);
         const gradientStrength = 1 - rowIdx / (rows - 1);
         let color;
         if (foundPath.includes(idx)) {
-          color = '#ffd700'; // gold for path
+          color = '#ffd700'; 
         } else if (idx === startIdx) {
-          color = '#00ff00'; // green for start
+          color = '#00ff00'; 
         } else if (idx === endIdx) {
-          color = '#ff0000'; // red for end
+          color = '#ff0000'; 
         } else if (node.closed) {
           color = `rgba(255,255,255,${0.5 * gradientStrength + 0.2})`;
         } else if (node.visited) {
@@ -157,12 +157,12 @@ const Background = () => {
         ctx.lineWidth = 1.5;
         ctx.stroke();
       });
-      // A* step (increase speed: do 6 steps per frame)
+      
       const astarStepsPerFrame = 6;
       let finished = false;
       for (let step = 0; step < astarStepsPerFrame; step++) {
         if (openSet.length > 0 && foundPath.length === 0) {
-          // Find node with lowest f
+          
           let lowestIdx = openSet[0];
           for (let i = 1; i < openSet.length; i++) {
             const candidateIdx = openSet[i];
@@ -228,7 +228,7 @@ const Background = () => {
       if (finished) {
         setTimeout(() => {
           resetAlgorithm();
-        }, 1200); // Pause before repeating
+        }, 1200); 
       }
       animationFrameId = requestAnimationFrame(draw);
     }

@@ -1,6 +1,6 @@
 # CS1 Prep Web App
 
-![Demo of Homepage Scrolling](./public/demo-homepage.gif)
+![Demo of Homepage Scrolling](./public/demo.gif)
 
 An interactive web application for UCF CS1 students to learn and practice core computer science concepts. Features modules, quizzes, flashcards, and resources for self-study.
 
