@@ -15,9 +15,8 @@ const AuthCallback = () => {
         .then(res => res.json())
         .then(async data => {
           if (data.success && data.user) {
-            
             await signInWithGitHubProfile(data.user);
-            
+
             localStorage.setItem('githubUser', JSON.stringify(data.user));
             window.location.href = '/';
           } else {

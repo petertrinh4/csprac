@@ -96,6 +96,11 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
+              <Link to="/feedback" className="text-black hover:bg-gray-200">
+                Feedback
+              </Link>
+            </li>
+            <li>
               {loggedIn ? (
                 <button onClick={handleSignOut} className="text-black hover:bg-gray-200">
                   Sign Out
