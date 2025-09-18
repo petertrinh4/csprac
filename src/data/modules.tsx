@@ -12,19 +12,48 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/Dn87Bna23TQ" title="Module Videos" />
         </div>
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/R0qIYWo8igs" title="" />
         </div>
         <UsefulLinks
           links={[
-            { href: 'https://en.wikipedia.org/wiki/Dynamic_memory_allocation', text: 'Wikipedia: Dynamic Memory Allocation' },
-            { href: 'https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/', text: 'GFG: Dynamic Memory Allocation' },
-            { href: 'https://www.tutorialspoint.com/cprogramming/c_dynamic_memory_allocation.htm', text: 'TutorialsPoint: Dynamic Memory Allocation' },
-            { href: 'https://www.programiz.com/c-programming/c-dynamic-memory-allocation', text: 'Programiz: Dynamic Memory Allocation' },
-            { href: 'https://www.javatpoint.com/dynamic-memory-allocation', text: 'JavaTpoint: Dynamic Memory Allocation' },
+            {
+              href: 'https://en.wikipedia.org/wiki/Dynamic_memory_allocation',
+              text: 'Wikipedia: Dynamic Memory Allocation',
+            },
+            {
+              href: 'https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/',
+              text: 'GFG: Dynamic Memory Allocation',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/cprogramming/c_dynamic_memory_allocation.htm',
+              text: 'TutorialsPoint: Dynamic Memory Allocation',
+            },
+            {
+              href: 'https://www.programiz.com/c-programming/c-dynamic-memory-allocation',
+              text: 'Programiz: Dynamic Memory Allocation',
+            },
+            {
+              href: 'https://www.javatpoint.com/dynamic-memory-allocation',
+              text: 'JavaTpoint: Dynamic Memory Allocation',
+            },
           ]}
         />
       </>
@@ -58,12 +87,22 @@ export const modules: Module[] = [
       },
       {
         question: 'What is the difference between malloc and calloc?',
-        options: ['calloc initializes memory to zero', 'malloc is faster', 'calloc is faster', 'malloc initializes memory to zero'],
+        options: [
+          'calloc initializes memory to zero',
+          'malloc is faster',
+          'calloc is faster',
+          'malloc initializes memory to zero',
+        ],
         answer: 'calloc initializes memory to zero',
       },
       {
         question: 'What happens if you free memory twice?',
-        options: ['Undefined behavior', 'Memory is freed again', 'No effect', 'Program runs faster'],
+        options: [
+          'Undefined behavior',
+          'Memory is freed again',
+          'No effect',
+          'Program runs faster',
+        ],
         answer: 'Undefined behavior',
       },
     ],
@@ -87,13 +126,27 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer
             url="https://www.youtube.com/embed/vgvR515ORaY"
             title="Big O Notation and Algorithm Analysis"
           />
         </div>
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer
             url="https://www.youtube.com/embed/xGYsEqe9Vl0"
             title="Best, Worst, and Average Case"
@@ -101,11 +154,26 @@ export const modules: Module[] = [
         </div>
         <UsefulLinks
           links={[
-            { href: 'https://en.wikipedia.org/wiki/Analysis_of_algorithms', text: 'Wikipedia: Analysis of Algorithms' },
-            { href: 'https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/', text: 'GFG: Asymptotic Analysis' },
-            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/algorithm_analysis.htm', text: 'TutorialsPoint: Algorithm Analysis' },
-            { href: 'https://www.programiz.com/dsa/algorithm-analysis', text: 'Programiz: Algorithm Analysis' },
-            { href: 'https://www.javatpoint.com/analysis-of-algorithms', text: 'JavaTpoint: Analysis of Algorithms' },
+            {
+              href: 'https://en.wikipedia.org/wiki/Analysis_of_algorithms',
+              text: 'Wikipedia: Analysis of Algorithms',
+            },
+            {
+              href: 'https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/',
+              text: 'GFG: Asymptotic Analysis',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/data_structures_algorithms/algorithm_analysis.htm',
+              text: 'TutorialsPoint: Algorithm Analysis',
+            },
+            {
+              href: 'https://www.programiz.com/dsa/algorithm-analysis',
+              text: 'Programiz: Algorithm Analysis',
+            },
+            {
+              href: 'https://www.javatpoint.com/analysis-of-algorithms',
+              text: 'JavaTpoint: Analysis of Algorithms',
+            },
           ]}
         />
       </>
@@ -168,19 +236,51 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
-          <VideoPlayer url="https://www.youtube.com/embed/STWnc6ZY2fw" title="Recursion Explained" />
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
+          <VideoPlayer
+            url="https://www.youtube.com/embed/STWnc6ZY2fw"
+            title="Recursion Explained"
+          />
         </div>
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
-          <VideoPlayer url="https://www.youtube.com/embed/63422umKubg" title="Recurrence Relations" />
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
+          <VideoPlayer
+            url="https://www.youtube.com/embed/63422umKubg"
+            title="Recurrence Relations"
+          />
         </div>
         <UsefulLinks
           links={[
-            { href: 'https://en.wikipedia.org/wiki/Recursion_(computer_science)', text: 'Wikipedia: Recursion (Computer Science)' },
+            {
+              href: 'https://en.wikipedia.org/wiki/Recursion_(computer_science)',
+              text: 'Wikipedia: Recursion (Computer Science)',
+            },
             { href: 'https://www.geeksforgeeks.org/recursion/', text: 'GFG: Recursion' },
-            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/recursion.htm', text: 'TutorialsPoint: Recursion' },
-            { href: 'https://www.programiz.com/c-programming/c-recursion', text: 'Programiz: Recursion' },
-            { href: 'https://www.javatpoint.com/recursion-in-c', text: 'JavaTpoint: Recursion in C' },
+            {
+              href: 'https://www.tutorialspoint.com/data_structures_algorithms/recursion.htm',
+              text: 'TutorialsPoint: Recursion',
+            },
+            {
+              href: 'https://www.programiz.com/c-programming/c-recursion',
+              text: 'Programiz: Recursion',
+            },
+            {
+              href: 'https://www.javatpoint.com/recursion-in-c',
+              text: 'JavaTpoint: Recursion in C',
+            },
           ]}
         />
       </>
@@ -199,7 +299,12 @@ export const modules: Module[] = [
       },
       {
         question: 'What is the base case in recursion?',
-        options: ['The recursive call', 'The stopping condition', 'The function definition', 'The loop'],
+        options: [
+          'The recursive call',
+          'The stopping condition',
+          'The function definition',
+          'The loop',
+        ],
         answer: 'The stopping condition',
       },
       {
@@ -209,12 +314,22 @@ export const modules: Module[] = [
       },
       {
         question: 'Recurrence relations are used to:',
-        options: ['Describe recursive algorithms', 'Sort arrays', 'Allocate memory', 'None of the above'],
+        options: [
+          'Describe recursive algorithms',
+          'Sort arrays',
+          'Allocate memory',
+          'None of the above',
+        ],
         answer: 'Describe recursive algorithms',
       },
       {
         question: 'What is tail recursion?',
-        options: ['Recursion where the recursive call is the last operation', 'Recursion with no base case', 'Recursion with multiple calls', 'Recursion with loops'],
+        options: [
+          'Recursion where the recursive call is the last operation',
+          'Recursion with no base case',
+          'Recursion with multiple calls',
+          'Recursion with loops',
+        ],
         answer: 'Recursion where the recursive call is the last operation',
       },
       {
@@ -243,16 +358,32 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/R9PTBwOzceo?list=PLBlnK6fEyqRi3-lvwLGzcaquOs5OBTCww" />
         </div>
         <UsefulLinks
           links={[
             { href: 'https://en.wikipedia.org/wiki/Linked_list', text: 'Wikipedia: Linked Lists' },
-            { href: 'https://www.geeksforgeeks.org/data-structures-linked-list/', text: 'GFG: Linked List Data Structure' },
-            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm', text: 'TutorialsPoint: Linked List Algorithms' },
+            {
+              href: 'https://www.geeksforgeeks.org/data-structures-linked-list/',
+              text: 'GFG: Linked List Data Structure',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm',
+              text: 'TutorialsPoint: Linked List Algorithms',
+            },
             { href: 'https://www.programiz.com/dsa/linked-list', text: 'Programiz: Linked List' },
-            { href: 'https://www.javatpoint.com/data-structure-linked-list', text: 'JavaTpoint: Linked List' },
+            {
+              href: 'https://www.javatpoint.com/data-structure-linked-list',
+              text: 'JavaTpoint: Linked List',
+            },
           ]}
         />
       </>
@@ -261,7 +392,12 @@ export const modules: Module[] = [
     quizQuestions: [
       {
         question: 'What is a linked list?',
-        options: ['A collection of arrays', 'A sequence of nodes', 'A type of tree', 'A sorting algorithm'],
+        options: [
+          'A collection of arrays',
+          'A sequence of nodes',
+          'A type of tree',
+          'A sorting algorithm',
+        ],
         answer: 'A sequence of nodes',
       },
       {
@@ -315,14 +451,30 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/A3ZUpyrnCbM" />
         </div>
         <UsefulLinks
           links={[
-            { href: 'https://en.wikipedia.org/wiki/Stack_(abstract_data_type)', text: 'Wikipedia: Stacks' },
-            { href: 'https://www.geeksforgeeks.org/stack-data-structure/', text: 'GFG: Stack Data Structure' },
-            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm', text: 'TutorialsPoint: Stack Algorithm' },
+            {
+              href: 'https://en.wikipedia.org/wiki/Stack_(abstract_data_type)',
+              text: 'Wikipedia: Stacks',
+            },
+            {
+              href: 'https://www.geeksforgeeks.org/stack-data-structure/',
+              text: 'GFG: Stack Data Structure',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm',
+              text: 'TutorialsPoint: Stack Algorithm',
+            },
             { href: 'https://www.programiz.com/dsa/stack', text: 'Programiz: Stack' },
             { href: 'https://www.javatpoint.com/data-structure-stack', text: 'JavaTpoint: Stack' },
           ]}
@@ -387,19 +539,48 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/Gt2yBZAhsGM" />
         </div>
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/jDM6_TnYIqE" />
         </div>
         <UsefulLinks
           links={[
-            { href: 'https://en.wikipedia.org/wiki/Binary_search_tree', text: 'Wikipedia: Binary Search Trees' },
-            { href: 'https://www.geeksforgeeks.org/binary-search-tree-data-structure/', text: 'GFG: Binary Search Tree' },
-            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm', text: 'TutorialsPoint: Binary Search Tree' },
-            { href: 'https://www.programiz.com/dsa/binary-search-tree', text: 'Programiz: Binary Search Tree' },
-            { href: 'https://www.javatpoint.com/binary-search-tree', text: 'JavaTpoint: Binary Search Tree' },
+            {
+              href: 'https://en.wikipedia.org/wiki/Binary_search_tree',
+              text: 'Wikipedia: Binary Search Trees',
+            },
+            {
+              href: 'https://www.geeksforgeeks.org/binary-search-tree-data-structure/',
+              text: 'GFG: Binary Search Tree',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm',
+              text: 'TutorialsPoint: Binary Search Tree',
+            },
+            {
+              href: 'https://www.programiz.com/dsa/binary-search-tree',
+              text: 'Programiz: Binary Search Tree',
+            },
+            {
+              href: 'https://www.javatpoint.com/binary-search-tree',
+              text: 'JavaTpoint: Binary Search Tree',
+            },
           ]}
         />
       </>
@@ -408,7 +589,12 @@ export const modules: Module[] = [
     quizQuestions: [
       {
         question: 'What is a binary search tree?',
-        options: ['A tree with two children', 'A sorted tree', 'A tree where left < root < right', 'A heap'],
+        options: [
+          'A tree with two children',
+          'A sorted tree',
+          'A tree where left < root < right',
+          'A heap',
+        ],
         answer: 'A tree where left < root < right',
       },
       {
@@ -448,10 +634,19 @@ export const modules: Module[] = [
       { front: 'Trie', back: 'Used for prefix matching.' },
       { front: 'Heap', back: 'Complete binary tree.' },
       { front: 'O(log n)', back: 'Search time in balanced BST.' },
-      { front: 'Complete Binary Tree', back: 'All levels are fully filled except possibly the last.' },
+      {
+        front: 'Complete Binary Tree',
+        back: 'All levels are fully filled except possibly the last.',
+      },
       { front: 'Heap Property', back: 'Defines the relationship between parent and child nodes.' },
-      { front: 'Height of Tree', back: 'The number of edges on the longest path from root to a leaf.' },
-      { front: 'Max Heap', back: 'A complete binary tree where parent nodes are greater than child nodes.' },
+      {
+        front: 'Height of Tree',
+        back: 'The number of edges on the longest path from root to a leaf.',
+      },
+      {
+        front: 'Max Heap',
+        back: 'A complete binary tree where parent nodes are greater than child nodes.',
+      },
     ],
   },
   {
@@ -462,16 +657,38 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/l7-f9gS8VOs" />
         </div>
         <UsefulLinks
           links={[
-            { href: 'https://en.wikipedia.org/wiki/Sorting_algorithm', text: 'Wikipedia: Sorting Algorithm' },
-            { href: 'https://www.geeksforgeeks.org/sorting-algorithms/', text: 'GFG: Sorting Algorithms' },
-            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm', text: 'TutorialsPoint: Sorting Algorithms' },
-            { href: 'https://www.programiz.com/dsa/sorting-algorithm', text: 'Programiz: Sorting Algorithm' },
-            { href: 'https://www.javatpoint.com/sorting-algorithms', text: 'JavaTpoint: Sorting Algorithms' },
+            {
+              href: 'https://en.wikipedia.org/wiki/Sorting_algorithm',
+              text: 'Wikipedia: Sorting Algorithm',
+            },
+            {
+              href: 'https://www.geeksforgeeks.org/sorting-algorithms/',
+              text: 'GFG: Sorting Algorithms',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/data_structures_algorithms/sorting_algorithms.htm',
+              text: 'TutorialsPoint: Sorting Algorithms',
+            },
+            {
+              href: 'https://www.programiz.com/dsa/sorting-algorithm',
+              text: 'Programiz: Sorting Algorithm',
+            },
+            {
+              href: 'https://www.javatpoint.com/sorting-algorithms',
+              text: 'JavaTpoint: Sorting Algorithms',
+            },
           ]}
         />
       </>
@@ -520,7 +737,10 @@ export const modules: Module[] = [
       { front: 'Radix Sort', back: 'Not comparison-based.' },
       { front: 'Insertion Sort', back: 'Best for nearly sorted data.' },
       { front: 'Selection Sort', back: 'Simple but inefficient.' },
-      { front: 'Quick Sort', back: 'Divide-and-conquer algorithm with average O(n log n) complexity.' },
+      {
+        front: 'Quick Sort',
+        back: 'Divide-and-conquer algorithm with average O(n log n) complexity.',
+      },
       { front: 'Heap Sort', back: 'Comparison-based sorting algorithm using a binary heap.' },
       { front: 'In-place Sorting', back: 'Sorting algorithm that requires no extra space.' },
       { front: 'Bubble Sort Best Case', back: 'O(n) when the array is already sorted.' },
@@ -534,16 +754,32 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/2Ti5yvumFTU" />
         </div>
         <UsefulLinks
           links={[
             { href: 'https://en.wikipedia.org/wiki/Hash_table', text: 'Wikipedia: Hash Table' },
-            { href: 'https://www.geeksforgeeks.org/hashing-data-structure/', text: 'GFG: Hashing Data Structure' },
-            { href: 'https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm', text: 'TutorialsPoint: Hash Data Structure' },
+            {
+              href: 'https://www.geeksforgeeks.org/hashing-data-structure/',
+              text: 'GFG: Hashing Data Structure',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/data_structures_algorithms/hash_data_structure.htm',
+              text: 'TutorialsPoint: Hash Data Structure',
+            },
             { href: 'https://www.programiz.com/dsa/hash-table', text: 'Programiz: Hash Table' },
-            { href: 'https://www.javatpoint.com/data-structure-hash-table', text: 'JavaTpoint: Hash Table' },
+            {
+              href: 'https://www.javatpoint.com/data-structure-hash-table',
+              text: 'JavaTpoint: Hash Table',
+            },
           ]}
         />
       </>
@@ -557,7 +793,12 @@ export const modules: Module[] = [
       },
       {
         question: 'What is a hash function?',
-        options: ['A function that sorts', 'A function that maps keys to indices', 'A function that searches', 'A function that deletes'],
+        options: [
+          'A function that sorts',
+          'A function that maps keys to indices',
+          'A function that searches',
+          'A function that deletes',
+        ],
         answer: 'A function that maps keys to indices',
       },
       {
@@ -577,12 +818,22 @@ export const modules: Module[] = [
       },
       {
         question: 'What is the load factor in a hash table?',
-        options: ['Ratio of elements to table size', 'Number of collisions', 'Hash function efficiency', 'Table size'],
+        options: [
+          'Ratio of elements to table size',
+          'Number of collisions',
+          'Hash function efficiency',
+          'Table size',
+        ],
         answer: 'Ratio of elements to table size',
       },
       {
         question: 'What is open addressing?',
-        options: ['Collision resolution without chaining', 'Hash function optimization', 'Dynamic resizing', 'Key-value mapping'],
+        options: [
+          'Collision resolution without chaining',
+          'Hash function optimization',
+          'Dynamic resizing',
+          'Key-value mapping',
+        ],
         answer: 'Collision resolution without chaining',
       },
     ],
@@ -606,19 +857,48 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/ffPOA7UUDAs" />
         </div>
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/9dPMb_znOwk" />
         </div>
         <UsefulLinks
           links={[
-            { href: 'https://en.wikipedia.org/wiki/Bitwise_operation', text: 'Wikipedia: Bitwise Operation' },
-            { href: 'https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/', text: 'GFG: Bitwise Operators in C/C++' },
-            { href: 'https://www.tutorialspoint.com/bitwise-operators-in-c', text: 'TutorialsPoint: Bitwise Operators in C' },
-            { href: 'https://www.programiz.com/c-programming/c-bitwise-operators', text: 'Programiz: Bitwise Operators' },
-            { href: 'https://www.javatpoint.com/bitwise-operators-in-c', text: 'JavaTpoint: Bitwise Operators in C' },
+            {
+              href: 'https://en.wikipedia.org/wiki/Bitwise_operation',
+              text: 'Wikipedia: Bitwise Operation',
+            },
+            {
+              href: 'https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/',
+              text: 'GFG: Bitwise Operators in C/C++',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/bitwise-operators-in-c',
+              text: 'TutorialsPoint: Bitwise Operators in C',
+            },
+            {
+              href: 'https://www.programiz.com/c-programming/c-bitwise-operators',
+              text: 'Programiz: Bitwise Operators',
+            },
+            {
+              href: 'https://www.javatpoint.com/bitwise-operators-in-c',
+              text: 'JavaTpoint: Bitwise Operators in C',
+            },
           ]}
         />
       </>
@@ -681,16 +961,32 @@ export const modules: Module[] = [
     content: (
       <>
         <Background />
-        <div style={{ padding: '10px', borderRadius: '15px', background: '#f5f6f7', boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)' }}>
+        <div
+          style={{
+            padding: '10px',
+            borderRadius: '15px',
+            background: '#f5f6f7',
+            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <VideoPlayer url="https://www.youtube.com/embed/XJkIaw2e1Pw" />
         </div>
         <UsefulLinks
           links={[
             { href: 'https://en.wikipedia.org/wiki/Summation', text: 'Wikipedia: Summation' },
-            { href: 'https://www.geeksforgeeks.org/summation-in-mathematics/', text: 'GFG: Summation in Mathematics' },
-            { href: 'https://www.tutorialspoint.com/summation-in-mathematics', text: 'TutorialsPoint: Summation in Mathematics' },
+            {
+              href: 'https://www.geeksforgeeks.org/summation-in-mathematics/',
+              text: 'GFG: Summation in Mathematics',
+            },
+            {
+              href: 'https://www.tutorialspoint.com/summation-in-mathematics',
+              text: 'TutorialsPoint: Summation in Mathematics',
+            },
             { href: 'https://www.programiz.com/math/summation', text: 'Programiz: Summation' },
-            { href: 'https://www.javatpoint.com/summation-in-mathematics', text: 'JavaTpoint: Summation in Mathematics' },
+            {
+              href: 'https://www.javatpoint.com/summation-in-mathematics',
+              text: 'JavaTpoint: Summation in Mathematics',
+            },
           ]}
         />
       </>

@@ -14,13 +14,12 @@ const Background = () => {
     canvas.width = width;
     canvas.height = height;
 
-    
-    const cols = Math.floor(width / 20); 
+    const cols = Math.floor(width / 20);
     const rows = Math.floor(height / 20);
     const nodeRadius = 7;
-    const hSpacing = width / (cols + 0.2); 
+    const hSpacing = width / (cols + 0.2);
     const vSpacing = height / (rows + 0.2);
-    
+
     type Node = {
       x: number;
       y: number;
@@ -46,7 +45,7 @@ const Background = () => {
         });
       }
     }
-    
+
     const startIdx = 0;
     const endIdx = nodes.length - 1;
     if (nodes[startIdx]) {
@@ -116,7 +115,7 @@ const Background = () => {
     function draw() {
       if (!ctx) return;
       ctx.clearRect(0, 0, width, height);
-      
+
       nodes.forEach((node, idx) => {
         neighbors(idx).forEach(nIdx => {
           const neighborNode = nodes[nIdx];
@@ -129,20 +128,20 @@ const Background = () => {
           ctx.stroke();
         });
       });
-      
+
       nodes.forEach((node, idx) => {
         ctx.beginPath();
         ctx.arc(node.x, node.y, nodeRadius, 0, 2 * Math.PI);
-        
+
         const rowIdx = Math.floor(idx / cols);
         const gradientStrength = 1 - rowIdx / (rows - 1);
         let color;
         if (foundPath.includes(idx)) {
-          color = '#ffd700'; 
+          color = '#ffd700';
         } else if (idx === startIdx) {
-          color = '#00ff00'; 
+          color = '#00ff00';
         } else if (idx === endIdx) {
-          color = '#ff0000'; 
+          color = '#ff0000';
         } else if (node.closed) {
           color = `rgba(255,255,255,${0.5 * gradientStrength + 0.2})`;
         } else if (node.visited) {
@@ -157,12 +156,11 @@ const Background = () => {
         ctx.lineWidth = 1.5;
         ctx.stroke();
       });
-      
+
       const astarStepsPerFrame = 6;
       let finished = false;
       for (let step = 0; step < astarStepsPerFrame; step++) {
         if (openSet.length > 0 && foundPath.length === 0) {
-          
           let lowestIdx = openSet[0];
           for (let i = 1; i < openSet.length; i++) {
             const candidateIdx = openSet[i];
@@ -228,7 +226,7 @@ const Background = () => {
       if (finished) {
         setTimeout(() => {
           resetAlgorithm();
-        }, 1200); 
+        }, 1200);
       }
       animationFrameId = requestAnimationFrame(draw);
     }

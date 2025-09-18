@@ -4,7 +4,7 @@ const ChatBot: React.FC = () => {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -27,12 +27,15 @@ const ChatBot: React.FC = () => {
       });
       const data = await res.json();
       if (data.reply) {
-        setMessages((prev) => [...prev, { role: 'assistant', content: data.reply }]);
+        setMessages(prev => [...prev, { role: 'assistant', content: data.reply }]);
       } else {
-        setMessages((prev) => [...prev, { role: 'assistant', content: 'Sorry, there was an error.' }]);
+        setMessages(prev => [
+          ...prev,
+          { role: 'assistant', content: 'Sorry, there was an error.' },
+        ]);
       }
     } catch (err) {
-      setMessages((prev) => [...prev, { role: 'assistant', content: 'Error connecting to AI.' }]);
+      setMessages(prev => [...prev, { role: 'assistant', content: 'Error connecting to AI.' }]);
     }
     setLoading(false);
   };
@@ -44,26 +47,32 @@ const ChatBot: React.FC = () => {
           isOpen ? 'translate-y-0' : 'translate-y-[calc(100%+1rem)]'
         }`}
         style={{
-          fontFamily: 'Arial Black, sans-serif', 
-          color: '#000000', 
-          minHeight: isOpen ? 400 : 0, 
-          display: isOpen ? 'flex' : 'none', 
+          fontFamily: 'Arial Black, sans-serif',
+          color: '#000000',
+          minHeight: isOpen ? 400 : 0,
+          display: isOpen ? 'flex' : 'none',
           flexDirection: 'column',
         }}
       >
-        <div className="card-body p-4" style={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+        <div
+          className="card-body p-4"
+          style={{ flex: 1, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}
+        >
           <div className="flex justify-between items-center mb-2">
             <h2 className="text-lg font-bold">🤖 Need Help? Ask Your AI Friend! 💬</h2>
             <span
               className="text-sm text-gray-600 cursor-pointer hover:text-gray-800"
               title="Click to close"
               onClick={() => setIsOpen(false)}
-              style={{ marginTop: '-8px' }} 
+              style={{ marginTop: '-8px' }}
             >
               ▼
             </span>
           </div>
-          <div className="chat-messages mb-2" style={{ flex: 1, maxHeight: 'calc(100% - 50px)', overflowY: 'auto' }}>
+          <div
+            className="chat-messages mb-2"
+            style={{ flex: 1, maxHeight: 'calc(100% - 50px)', overflowY: 'auto' }}
+          >
             {messages.map((msg, idx) => (
               <div key={idx} className={`mb-2 ${msg.role === 'user' ? 'text-right' : 'text-left'}`}>
                 <span
@@ -91,8 +100,8 @@ const ChatBot: React.FC = () => {
             type="text"
             className="input input-bordered flex-1 rounded-full px-4 py-2 border border-[#f5f6f7] bg-gradient-to-r from-yellow-200 to-yellow-300 text-black"
             value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && sendMessage()}
+            onChange={e => setInput(e.target.value)}
+            onKeyDown={e => e.key === 'Enter' && sendMessage()}
             placeholder="Type your question..."
             disabled={loading}
           />
@@ -110,7 +119,7 @@ const ChatBot: React.FC = () => {
           className="fixed bottom-4 right-4 text-white rounded-full p-4 shadow-lg"
           style={{
             backgroundColor: '#bc9904',
-            fontFamily: 'Arial Black, sans-serif', 
+            fontFamily: 'Arial Black, sans-serif',
           }}
           onClick={() => setIsOpen(true)}
         >

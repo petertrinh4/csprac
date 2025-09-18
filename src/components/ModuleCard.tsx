@@ -5,7 +5,7 @@ type ModuleCardProps = {
   description: string;
   image: string;
   id: string;
-  className?: string; 
+  className?: string;
 };
 
 const ModuleCard = ({ title, description, image, id, className }: ModuleCardProps) => {
@@ -20,9 +20,7 @@ const ModuleCard = ({ title, description, image, id, className }: ModuleCardProp
           <p>{description}</p>
           <div className="card-actions">
             <Link to={`/module/${id}`}>
-              <button
-                className="btn text-white border-none bg-[#bc9904] transition-all duration-300 hover:bg-[#d4b106] hover:ring-4 hover:ring-yellow-300"
-              >
+              <button className="btn text-white border-none bg-[#bc9904] transition-all duration-300 hover:bg-[#d4b106] hover:ring-4 hover:ring-yellow-300">
                 Learn more
               </button>
             </Link>

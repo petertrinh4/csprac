@@ -8,11 +8,11 @@ export type FlashcardType = {
 const Flashcard = ({
   flashcards,
   additionalFlashcards = [],
-  loadMoreFlashcards, 
+  loadMoreFlashcards,
 }: {
   flashcards: FlashcardType[];
   additionalFlashcards?: FlashcardType[];
-  loadMoreFlashcards?: () => FlashcardType[]; 
+  loadMoreFlashcards?: () => FlashcardType[];
 }) => {
   const [current, setCurrent] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -43,7 +43,9 @@ const Flashcard = ({
   }
 
   return (
-    <div className="flex flex-col items-center gap-6"> {/* Changed alignment to 'items-center' */}
+    <div className="flex flex-col items-center gap-6">
+      {' '}
+      {/* Changed alignment to 'items-center' */}
       <div
         className="card w-96 shadow-xl rounded-3xl cursor-pointer transition-transform duration-300 transform hover:scale-105"
         onClick={handleFlip}
@@ -61,21 +63,21 @@ const Flashcard = ({
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: 'inherit',
-            transformStyle: 'preserve-3d', 
-            transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)', 
-            transition: 'transform 0.6s ease', 
+            transformStyle: 'preserve-3d',
+            transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+            transition: 'transform 0.6s ease',
           }}
         >
           <div
             style={{
-              backfaceVisibility: 'hidden', 
+              backfaceVisibility: 'hidden',
               position: 'absolute',
               width: '100%',
               height: '100%',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              background: 'linear-gradient(135deg, #fff8b0, #ffe680)', 
+              background: 'linear-gradient(135deg, #fff8b0, #ffe680)',
               borderRadius: 'inherit',
             }}
           >
@@ -83,17 +85,17 @@ const Flashcard = ({
           </div>
           <div
             style={{
-              backfaceVisibility: 'hidden', 
+              backfaceVisibility: 'hidden',
               position: 'absolute',
               width: '100%',
               height: '100%',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              background: 'linear-gradient(135deg, #fff4a3, #ffdb66)', 
+              background: 'linear-gradient(135deg, #fff4a3, #ffdb66)',
               borderRadius: 'inherit',
-              transform: 'rotateY(180deg)', 
-              textAlign: 'center', 
+              transform: 'rotateY(180deg)',
+              textAlign: 'center',
             }}
           >
             <p className="card-title text-xl font-bold text-gray-800">{card.back}</p>
@@ -104,9 +106,9 @@ const Flashcard = ({
         <button
           className="btn btn-md btn-outline rounded-full"
           style={{
-            backgroundColor: '#bc9904', 
-            borderColor: '#bc9904', 
-            color: '#ffffff', 
+            backgroundColor: '#bc9904',
+            borderColor: '#bc9904',
+            color: '#ffffff',
             fontFamily: 'Arial Black, sans-serif',
             opacity: current === 0 ? 0.5 : 1,
             cursor: current === 0 ? 'not-allowed' : 'pointer',
@@ -114,13 +116,13 @@ const Flashcard = ({
           }}
           onClick={handlePrev}
           disabled={current === 0}
-          onMouseEnter={(e) => {
+          onMouseEnter={e => {
             if (current !== 0) {
               e.currentTarget.style.transform = 'scale(1.1)';
               e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
             }
           }}
-          onMouseLeave={(e) => {
+          onMouseLeave={e => {
             e.currentTarget.style.transform = 'scale(1)';
             e.currentTarget.style.boxShadow = 'none';
           }}
@@ -129,30 +131,33 @@ const Flashcard = ({
         </button>
         <span
           className="text-md text-gray-700 font-medium"
-          style={{ fontFamily: 'Arial Black, sans-serif' }} 
+          style={{ fontFamily: 'Arial Black, sans-serif' }}
         >
           {current + 1} / {allFlashcards.length}
         </span>
         <button
           className="btn btn-md btn-outline rounded-full"
           style={{
-            backgroundColor: '#bc9904', 
-            borderColor: '#bc9904', 
-            color: '#ffffff', 
+            backgroundColor: '#bc9904',
+            borderColor: '#bc9904',
+            color: '#ffffff',
             fontFamily: 'Arial Black, sans-serif',
             opacity: current === allFlashcards.length - 1 && !loadMoreFlashcards ? 0.5 : 1,
-            cursor: current === allFlashcards.length - 1 && !loadMoreFlashcards ? 'not-allowed' : 'pointer',
+            cursor:
+              current === allFlashcards.length - 1 && !loadMoreFlashcards
+                ? 'not-allowed'
+                : 'pointer',
             transition: 'transform 0.2s ease, box-shadow 0.2s ease',
           }}
           onClick={handleNext}
           disabled={current === allFlashcards.length - 1 && !loadMoreFlashcards}
-          onMouseEnter={(e) => {
+          onMouseEnter={e => {
             if (!(current === allFlashcards.length - 1 && !loadMoreFlashcards)) {
               e.currentTarget.style.transform = 'scale(1.1)';
               e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
             }
           }}
-          onMouseLeave={(e) => {
+          onMouseLeave={e => {
             e.currentTarget.style.transform = 'scale(1)';
             e.currentTarget.style.boxShadow = 'none';
           }}

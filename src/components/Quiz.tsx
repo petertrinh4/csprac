@@ -19,7 +19,6 @@ const Quiz = ({ questions }: QuizProps) => {
   const quizRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
-  
   useEffect(() => {
     if (quizRef.current) {
       setDimensions({
@@ -29,7 +28,6 @@ const Quiz = ({ questions }: QuizProps) => {
     }
   }, [quizRef.current, current]);
 
-  
   useEffect(() => {
     if (showScore && score === questions.length) {
       setShowConfetti(true);
